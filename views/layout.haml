@@ -7,22 +7,22 @@
     %meta{ property: "description", content: "software developer. ex-athlete. dreamer. photographer." }
     %meta{ content: "width=device-width, initial-scale=1.0", name: "viewport" }
 
+    %script{ src: "javascript/jquery-2.1.1.min.js" }
+    %script{ src: "javascripts/skrollr.js" }
+    %script{ src: "javascript/homesite.js" }
+
     %link{ rel: "stylesheet", href: "stylesheets/base.css"}
-    %link{ rel: "stylesheet", href: "stylesheets/styles.css"}
+    %link{ rel: "stylesheet", href: "stylesheets/style.css"}
     %link{ rel: "stylesheet", href: "http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css"}
 
   %body
     .sticky-title-container.mobile-hide.fixed.full-height.t0.l0.bg-black.z-index-1.transition-all
       .sticky-title.sticky-title-left.l0{ data: { "0": "left: 140px;", "100p": "left: 80px;", "200p": "left: 20px;", "300p": "left: -40px;", "400p": "left: -100px;", "500p": "left: -160px;", "600p": "left: -240px;", "700p": "left: -280px;" }}
-        %a.title.white.no-decoration{ href: "#about"}about me
+        %a.title.white.no-decoration{ href: "#about"}about
         %a.title.white.no-decoration{ href: "#lately"}lately
         %a.title.white.no-decoration{ href: "#cambrian"}cambrian
         %a.title.white.no-decoration{ href: "#projects"}projects
-        %a.title.white.no-decoration{ href: "#photography"}photography
+        %a.title.white.no-decoration{ href: "#misc"}misc
         %a.title.white.no-decoration{ href: "#contact"}contact
     %article.slide-container.full-height
       = yield
-
-  %script{ src: "javascript/jquery-2.1.1.min.js" }
-  %script{ src: "javascripts/skrollr.js" }
-  %script{ src: "javascript/homesite.js" }

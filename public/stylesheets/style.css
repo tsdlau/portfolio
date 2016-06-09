@@ -22,19 +22,22 @@ html {
 @media screen and (min-width: 640px) {
   .slide-container {
     padding-left: 60px; } }
+
+#about{
+  background-color: #fff;
+}
+
 #cambrian {
-  background-color: #2bde73; }
+  background-color: #ffad30; }
 
 #lately {
   background-color: blue; }
 
-/*#photography {
-  background-image: url("../images/iphone_leather_orange.jpg"); }*/
+#misc {
+  background-color: orange; }
 
-#showcase {
-  background-color: #4fbb7e;
-  background-image: url("../images/dollar-a-day-bg.jpg");
-  background-size: 100% auto; }
+#projects {
+  background-color: #4fbb7e;}
 
 .button {
   display: inline-block;
