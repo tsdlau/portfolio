@@ -44,17 +44,7 @@ html {
   background-color: #4fbb7e;}
 
 #flix-chill-splash{
-  background: url("../images/flix-chill_splash.tiff");
-  background-size: auto 100%;
-  width: 50%;
-  background-position: right;
-}
-
-#elevader-splash{
-  background-image: url("../images/elevader_splash.tiff");
-  background-size: auto 100%;
-  width: 50%;
-  background-position: left;
+  padding-left: 5rem;
 }
 
 .button {
