@@ -1,8 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 body,
 html {
   background-color: black;
   color: white;
-  font-family: "Calibri", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size-adjust: 0.508;
   font-weight: normal;
   font-style: normal; }
@@ -27,17 +29,33 @@ html {
   background-color: #fff;
 }
 
-#cambrian {
-  background-color: #ffad30; }
+#past {
+  background-color: #ecad17; }
 
 #lately {
-  background-color: blue; }
+  background-color: #62adf2; }
 
 #misc {
-  background-color: orange; }
+  background-image: url("../images/collage.png");
+  background-size: 95% auto;
+}
 
 #projects {
   background-color: #4fbb7e;}
+
+#flix-chill-splash{
+  background: url("../images/flix-chill_splash.tiff");
+  background-size: auto 100%;
+  width: 50%;
+  background-position: right;
+}
+
+#elevader-splash{
+  background-image: url("../images/elevader_splash.tiff");
+  background-size: auto 100%;
+  width: 50%;
+  background-position: left;
+}
 
 .button {
   display: inline-block;
@@ -76,6 +94,10 @@ a {
   .button.black::after,
   a.black::after {
     background-color: black; }
+  .button.white::after,
+  a.white::after{
+    background-color: white;
+  }
 
 .light {
   font-weight: 200; }

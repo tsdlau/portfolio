@@ -41,6 +41,10 @@ textarea {
 .black {
   color: black; }
 
+.grey{
+  color: #c7c7c7;
+}
+
 .no-margin {
   margin: 0; }
 

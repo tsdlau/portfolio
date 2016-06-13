@@ -1,15 +1,15 @@
-$(document).ready(function () {
+$(document).ready(function() {
   if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     var s = skrollr.init({forceHeight: false});
   }
 
   $('.sticky-title-container').hover(
-    function () {
+    function() {
       $(this).css({
         'width': '240px'
       });
     },
-    function () {
+    function() {
       $(this).css({
         'width': '60px'
       });
@@ -22,5 +22,4 @@ $(document).ready(function () {
       scrollTop: $(href).offset().top
     }, 500);
   });
-
 });
