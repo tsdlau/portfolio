@@ -10,3 +10,7 @@ end
 get '/home' do
   haml :home
 end
+
+get '/photos' do
+  haml :photos, layout: false
+end
