@@ -44,11 +44,15 @@ html {
   background-color: #4fbb7e;}
 
 #flix-chill-splash{
-  padding-left: 5rem;
+  padding-top: 3rem;
 }
 
 #elevader-splash{
-  padding-left: 5rem;
+  padding-left: 10rem;
+}
+
+#ref{
+  font-size: 15px;
 }
 
 .button {
