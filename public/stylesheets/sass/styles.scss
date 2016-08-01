@@ -1,0 +1,272 @@
+// ********** IMPORTS AND MIXINS ********** //
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import "../../plugins/materialize/sass/materialize";
+@mixin hoverlinks{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  visibility: hidden;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+}
+@mixin hoverlinksafter{
+  visibility: visible;
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+}
+@mixin logos{
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+// ********** GLOBAL STYLES ********** //
+body, html {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+
+  @media screen and (max-width:600px){
+    p{
+      font-size: 30px;
+    }
+  }
+  @media screen and (min-width:601px) and (max-width: 1920px){
+    p{
+      font-size: 53px;
+    }
+    #projects{
+      p{
+        font-size: 3.2vh;
+      }
+      a{
+        font-size: 3.8vh;
+      }
+    }
+  }
+  @media screen and (min-width:1921px){
+    p{
+      font-size: 55px;
+    }
+  }
+}
+
+a.title{
+  position: relative;
+}
+a.title:before{
+  @include hoverlinks;
+  background-color: #fff;
+}
+a.title:hover:before{
+  @include hoverlinksafter;
+}
+
+.main-container{
+  height: 100%;
+}
+.blurb{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.text-black{
+  p{
+    width: 70%;
+    line-height: 100%;
+    color: black;
+    a{
+      position: relative;
+      color: white;
+      transition: color .7s ease;
+      white-space: nowrap;
+    }
+    a:before{
+      @include hoverlinks;
+      background-color: #fff;
+    }
+    a:hover:before{
+      @include hoverlinksafter;
+    }
+  }
+}
+
+.text-white{
+  p{
+    width: 70%;
+    line-height: 100%;
+    color: white;
+    a{
+      position: relative;
+      color: black;
+      transition: color .7s ease;
+      white-space: nowrap;
+    }
+    a:before{
+      @include hoverlinks;
+      background-color: #000;
+    }
+    a:hover:before{
+      @include hoverlinksafter;
+    }
+  }
+}
+
+// ********** NAVIGATION ********** //
+.sticky-title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+  width: 200px;
+  margin-top: -180px; }
+  .sticky-title .title {
+    display: block;
+    height: 60px;
+    line-height: 60px; }
+  .sticky-title.sticky-title-left {
+    -webkit-transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -moz-transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -ms-transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -o-transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); }
+
+#sideNav {
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 1;
+  position: fixed;
+  height: 100%;
+  width: 60px;
+  overflow: hidden;
+  transition: .5s ease-in-out;
+  font-size: 1.5em;
+  }
+
+#navLink{
+  color: white;
+  text-decoration: none;
+}
+
+// ********** PAGES ********** //
+#about{
+  height: 100%;
+  padding-left: 30%;
+  background-color: #FFF;
+}
+
+
+#lately {
+  height: 100%;
+  padding-left: 33%;
+  background-color: #62adf2;
+
+  a:hover{
+    color: #62adf2;
+  }
+}
+
+#projects {
+  height: 100%;
+  padding-left: 20%;
+  background-color: #FFB732;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  .projectchild{
+    width: 90%;
+
+    .text-black{
+      width: 30%;
+    }
+  }
+
+  a:hover{
+    color: #FFB732;
+  }
+}
+
+#past {
+  background-color: #F25EA2;
+  height: 100%;
+  padding-left: 33%;
+
+  a:hover{
+    color: #F25EA2;
+  }
+}
+
+#misc {
+  height: 100%;
+  padding-left:33%;
+  background-image: url("../images/collage.png");
+  background-size: 100% auto;
+
+  .text-white{
+    a{
+      color: #8d8d8d;
+    }
+  }
+  a:hover{
+    color: rgba(0, 0, 0, 0.0);
+  }
+}
+
+#contact{
+  background-color: black;
+  height: 100%;
+  padding-left: 45%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  a{
+    font-size: 17px;
+  }
+
+  a:hover{
+    color: black;
+  }
+}
+
+#projectsMobile {
+  height: 100%;
+  background-color: #FFB732;
+  padding-left: 20%;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-items: center;
+}
+
+#flixChillLogo{
+  @include logos;
+  background-image:url("../images/netflixchill.png");
+}
+
+#elevaderLogo{
+  @include logos;
+  background-image:url("../images/elevader.png");
+}
+
+#greatChowLogo{
+  @include logos;
+  background-image:url("../images/greatchow.png");
+}
+
+#ref{
+  font-size: 15px;
+}

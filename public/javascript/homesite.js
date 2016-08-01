@@ -3,7 +3,7 @@ $(document).ready(function() {
     var s = skrollr.init({forceHeight: false});
   }
 
-  $('.sticky-title-container').hover(
+  $('#sideNav').hover(
     function() {
       $(this).css({
         'width': '240px'
