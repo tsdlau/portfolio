@@ -1,27 +1,39 @@
-%section#projects.slide.mobile-table.full-height
-  .mobile-table-cell
-    %br
-    .row
-      .small-7.columns.small-centered
-        .row
-          .small-6.columns
-            %p.big-type.light.white.align-right
-              %a.black{ href: "http://flix-chill.herokuapp.com", target: "_blank"}flix-chill:
-              allowing people to connect with each other based on similarly watched TV shows.
-              %br
-              %a.button#ref{ href: "https://github.com/tsdlau/flix-chill"}github/flix-chill
-          .small-1.columns.end.small-offset-1
-            %img#flix-chill-splash{ src: '../images/netflixchill.png'}
-    %br
-    %br
-    .row
-      .small-7.columns.small-centered
-        .row
-          .small-2.columns.small-offset-1
-            %img{ src: '../images/elevader.png'}
-          .small-6.columns
-            %p.big-type.light.white.align-left
-              %a.black{ href: "http://elevader.herokuapp.com", target: "_blank"}elevader:
-              a yelp-like app that allows users to submit reviews on elevators of Boston
-              %br
-              %a.button#ref{ href: "https://github.com/filipemir/elevader"}github/elevader
+#projects.hide-on-med-and-down
+  .projectchild
+    .blurb
+      .text-black
+        %p
+          %a{href: "http://flix-chill.herokuapp.com/"}flix // chill
+          %br
+          %a{href: "https://github.com/tsdlau/flix-chill", style: "font-size: 12px;"}github | flix-chill
+      .text-black
+        %p
+          allowing people to connect with each other based on similar watched tv shows
+      #flixChillLogo
+  .projectchild
+    .blurb
+      .text-black
+        %p
+          %a{href: "http://elevader.herokuapp.com/"}elevader
+          %br
+          %a{href: "https://github.com/filipemir/elevader", style: "font-size: 12px;"}github | elevader
+      .text-black
+        %p
+          a yelp-like app that critiques elevators of Boston.
+      #elevaderLogo
+  .projectchild
+    .blurb
+      .text-black
+        %p
+          %a{href: "http://greatchow.herokuapp.com/"}Great Chow
+          %br
+          %a{href: "https://github.com/tsdlau/greatchow", style: "font-size: 12px;"}github | elevader
+      .text-black
+        %p
+          a redesign for the Great Chow restaurants in Quincy and Abington
+      #greatChowLogo
+
+#projectsMobile.hide-on-med-and-up
+  #flixChillLogo
+  #elevaderLogo
+  #greatChowLogo
