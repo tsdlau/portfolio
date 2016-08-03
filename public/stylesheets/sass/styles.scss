@@ -20,10 +20,21 @@
   -webkit-transform: scaleX(1);
 }
 @mixin logos{
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
+}
+@mixin modalimage{
+  border:2px solid silver;
+  height: 500px;
+  width: auto;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 // ********** GLOBAL STYLES ********** //
@@ -38,15 +49,7 @@ body, html {
   }
   @media screen and (min-width:601px) and (max-width: 1920px){
     p{
-      font-size: 53px;
-    }
-    #projects{
-      p{
-        font-size: 3.2vh;
-      }
-      a{
-        font-size: 3.8vh;
-      }
+      font-size: 50px;
     }
   }
   @media screen and (min-width:1921px){
@@ -86,7 +89,7 @@ a.title:hover:before{
     a{
       position: relative;
       color: white;
-      transition: color .7s ease;
+      transition: color .5s ease-in-out 0s;
       white-space: nowrap;
     }
     a:before{
@@ -107,7 +110,7 @@ a.title:hover:before{
     a{
       position: relative;
       color: black;
-      transition: color .7s ease;
+      transition: color .5s ease-in-out 0s;
       white-space: nowrap;
     }
     a:before{
@@ -166,7 +169,6 @@ a.title:hover:before{
   background-color: #FFF;
 }
 
-
 #lately {
   height: 100%;
   padding-left: 33%;
@@ -186,16 +188,22 @@ a.title:hover:before{
   justify-content: space-around;
   align-items: flex-start;
 
-  .projectchild{
+  .project-child{
     width: 90%;
 
-    .text-black{
+    .text-white, .text-black{
       width: 30%;
+      margin-right: 25%;
     }
   }
 
   a:hover{
     color: #FFB732;
+  }
+}
+.modal-content{
+  p{
+    font-size: 24px;
   }
 }
 
@@ -217,11 +225,12 @@ a.title:hover:before{
 
   .text-white{
     a{
-      color: #8d8d8d;
+      color: silver;
+      opacity: 0.75;
     }
   }
   a:hover{
-    color: rgba(0, 0, 0, 0.0);
+    color: rgba(0, 0, 0, 0);
   }
 }
 
@@ -242,19 +251,10 @@ a.title:hover:before{
   }
 }
 
-#projectsMobile {
-  height: 100%;
-  background-color: #FFB732;
-  padding-left: 20%;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  align-items: center;
-  align-items: center;
-}
 
 #flixChillLogo{
   @include logos;
-  background-image:url("../images/netflixchill.png");
+  background-image:url("../images/flixchill.png");
 }
 
 #elevaderLogo{
@@ -267,6 +267,93 @@ a.title:hover:before{
   background-image:url("../images/greatchow.png");
 }
 
-#ref{
-  font-size: 15px;
+#salonSiteLogo{
+  @include logos;
+  background-image:url("../images/salonsite.png")
+}
+
+// ********** IMAGE STYLING ********** //
+#flixchill1{
+  @include modalimage;
+  background-image: url("../images/flixchill1.jpg");
+}
+#flixchill4{
+  @include modalimage;
+  background-image: url("../images/flixchill4.jpg");
+}
+#flixchill5{
+  @include modalimage;
+  background-image: url("../images/flixchill5.jpg");
+}
+#flixchill6{
+  @include modalimage;
+  background-image: url("../images/flixchill6.jpg");
+}
+#flixchill7{
+  @include modalimage;
+  background-image: url("../images/flixchill7.jpg");
+}
+
+#elevader1{
+  @include modalimage;
+  background-image: url("../images/elevader1.jpg");
+}
+#elevader2{
+  @include modalimage;
+  background-image: url("../images/elevader2.jpg");
+}
+#elevader3{
+  @include modalimage;
+  background-image: url("../images/elevader3.jpg");
+}
+#elevader4{
+  @include modalimage;
+  background-image: url("../images/elevader4.jpg");
+}
+#elevader5{
+  @include modalimage;
+  background-image: url("../images/elevader5.jpg");
+}
+
+#greatchow1{
+  @include modalimage;
+  background-image: url("../images/greatchow1.jpg");
+}
+#greatchow2{
+  @include modalimage;
+  background-image: url("../images/greatchow2.jpg");
+}
+#greatchow3{
+  @include modalimage;
+  background-image: url("../images/greatchow3.jpg");
+}
+#greatchow4{
+  @include modalimage;
+  background-image: url("../images/greatchow4.jpg");
+}
+#greatchow5{
+  @include modalimage;
+  background-image: url("../images/greatchow5.jpg");
+}
+
+#salonsite1{
+  @include modalimage;
+  background-image: url("../images/salonsite1.jpg");
+}
+#salonsite2{
+  @include modalimage;
+  background-image: url("../images/salonsite2.jpg");
+}
+#salonsite3{
+  @include modalimage;
+  background-image: url("../images/salonsite3.jpg");
+}
+#salonsite4{
+  height: 500px;
+  width: auto;
+  margin: 0 auto;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images/salonsite4.jpg");
 }

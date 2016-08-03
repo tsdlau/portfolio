@@ -1,34 +1,97 @@
 #projects
-  .projectchild
+  .project-child
     .blurb
-      .text-black
+      .text-white
         %p
-          %a{href: "http://flix-chill.herokuapp.com/"}flix // chill
+          %a.waves-effect.modal-trigger{href: "#flixchillModal"}flix // chill
           %br
-          %a{href: "https://github.com/tsdlau/flix-chill", style: "font-size: 12px;"}github | flix-chill
-      .text-black
-        %p
-          allowing people to connect with each other based on similar watched tv shows
+          %a.waves-effect{href: "https://github.com/tsdlau/flix-chill", style: "font-size: 12px;"}github | flixchill
       #flixChillLogo
-  .projectchild
+  .project-child
     .blurb
       .text-black
         %p
-          %a{href: "http://elevader.herokuapp.com/"}elevader
+          %a.waves-effect.modal-trigger{href: "#elevaderModal"}elevader
           %br
-          %a{href: "https://github.com/filipemir/elevader", style: "font-size: 12px;"}github | elevader
-      .text-black
-        %p
-          a yelp-like app that critiques elevators of Boston.
+          %a.waves-effect{href: "https://github.com/filipemir/elevader", style: "font-size: 12px;"}github | elevader
       #elevaderLogo
-  .projectchild
+  .project-child
     .blurb
-      .text-black
+      .text-white
         %p
-          %a{href: "http://greatchow.herokuapp.com/"}Great Chow
+          %a.waves-effect.modal-trigger{href: "#greatchowModal"}Great Chow
           %br
-          %a{href: "https://github.com/tsdlau/greatchow", style: "font-size: 12px;"}github | elevader
-      .text-black
-        %p
-          a redesign for the Great Chow restaurants in Quincy and Abington
+          %a.waves-effect{href: "https://github.com/tsdlau/greatchow", style: "font-size: 12px;"}github | greatchow
       #greatChowLogo
+  -# .project-child
+  -#   .blurb
+  -#     .text-black
+  -#       %p
+  -#         %a.waves-effect.modal-trigger{href: "#salonsiteModal"}Salon-Site
+  -#         %br
+  -#         %a.waves-effect{href: "http://staging.amalgam.co/salonsite/", style: "font-size: 12px;"}amalgam.co | salonsite
+  -#     #salonSiteLogo
+#flixchillModal.modal.modal-fixed-footer
+  .modal-content
+    %h4 flix // chill | May 2016
+    %p allowing people to connect with each other based on similar watched tv shows
+    #flixchill1
+    %p go ahead and sign up with whatever username, email, and password you want (no validations have been set up)
+    #flixchill4
+    %p
+      users can add in their own watched tv shows which utilizes the
+      %a{href:"http://omdbapi.com/"}OMDBapi
+      which effectively scrapes off of IMDB
+    #flixchill5
+    %p users are also able to chat with each other once both parties have accepted the 'chill' request
+    #flixchill6
+    %br
+    #flixchill7
+  .modal-footer
+    %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{href:"http://flix-chill.herokuapp.com/"}demo
+    %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{href:"https://github.com/tsdlau/flix-chill"}git
+#elevaderModal.modal.modal-fixed-footer
+  .modal-content
+    %h4 elevader | April 2016
+    %p a yelp-like app that critiques elevators of Boston, a group capstone project during my time at Launch Academy.
+    #elevader1
+    %p after you sign in/up you'll be directed to a page where you can see a list of elevators that users have submitted
+    #elevader2
+    %p users are able to view details of an elevator, see its average rating, add in their own review, and even upvote/downvote other people's reviews
+    #elevader3
+    %p users are also able to create their own elevators for review and may edit, update, and delete them accordingly (implementing the CRUD system)
+    #elevader4
+    %p users are also able to update their own profile information or delete their account
+    #elevader5
+  .modal-footer
+    %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{href:"http://elevader.herokuapp.com/"}demo
+    %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{href:"https://github.com/filipemir/elevader"}git
+#greatchowModal.modal.modal-fixed-footer
+  .modal-content
+    %h4 Great Chow | June 2016
+    %p a redesign for the Great Chow restaurants in Quincy and Abington in Massachusetts
+    #greatchow1
+    %p it's heavy on flashy stuff like lots of parallax, big pictures, jquery effects
+    #greatchow2
+    %p a portal was created for the manager to create, edit, or delete special events
+    #greatchow3
+    #greatchow4
+    %p and of course a contact form to the management team at Great Chow
+    #greatchow5
+  .modal-footer
+    %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{href:"http://greatchow.herokuapp.com/"}demo
+    %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{href:"https://github.com/tsdlau/greatchow"}git
+-# #salonsiteModal.modal.modal-fixed-footer
+-#   .modal-content
+-#     %h4 Salon-Site | July 2016
+-#     %p a website for a client who wants to change the way salon services are conducted in the future
+-#     #salonsite1
+-#     %p a static website that is actually a revamp of an existing design
+-#     #salonsite2
+-#     %p the challenge was to build this in pure HTML/CSS/Javascript - the barebones
+-#     #salonsite3
+-#     %p implemented mobile design, too
+-#     #salonsite4
+-#   .modal-footer
+-#     %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{href:"http://staging.amalgam.co/salonsite/"}demo
+-#     %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{href:"http://amalgam.co/"}amalgam.co
