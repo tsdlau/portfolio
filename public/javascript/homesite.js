@@ -3,6 +3,31 @@ $(document).ready(function() {
     var s = skrollr.init({forceHeight: false});
   }
 
+  var offset = 300,
+		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+		offset_opacity = 5000,
+		//duration of the top scrolling animation (in ms)
+		scroll_top_duration = 700,
+		//grab the "back to top" link
+		$back_to_top = $('.cd-top');
+
+	//hide or show the "back to top" link
+	$(window).scroll(function(){
+		( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+		if( $(this).scrollTop() > offset_opacity ) {
+			$back_to_top.addClass('cd-fade-out');
+		}
+	});
+
+	//smooth scroll to top
+	$back_to_top.on('click', function(event){
+		event.preventDefault();
+		$('body,html').animate({
+			scrollTop: 0 ,
+		 	}, scroll_top_duration
+		);
+	});
+
   $('#sideNav').hover(
     function() {
       $(this).css({
@@ -15,6 +40,11 @@ $(document).ready(function() {
       });
     }
   );
+
+  var hellos = {
+    strings: ["", "Hello!", "Hola!", "你好!", "안녕하세요!", "Bonjour!", "नमस्ते!", "What's good?"]
+  }
+  $(".greeting").typed(hellos);
 
   $('.title').on('click', function () {
     var href = $(this).attr('href');
