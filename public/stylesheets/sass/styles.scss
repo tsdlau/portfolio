@@ -46,13 +46,13 @@ body, html {
     p, span{
       font-size: 24px !important;
     }
+    #sideNav{
+      visibility: hidden;
+    }
   }
   @media screen and (min-width:601px) and (max-width: 1025px){
     p{
       font-size: 36px;
-    }
-    #sideNav{
-      visibility: hidden;
     }
   }
   @media screen and (min-width: 1026px) and (max-width:1599px){
