@@ -1,7 +1,8 @@
 require 'sinatra'
-require 'haml'
+require 'hamlit'
 
 use Rack::Deflater
+set :haml, { escape_html: false }
 
 get '/' do
   redirect '/home'
