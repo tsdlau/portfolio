@@ -194,7 +194,7 @@ a.title:hover:before{
 
 #lately {
   height: 100%;
-  padding-left: 33%;
+  padding-left: 30%;
   background-color: #62adf2;
 
   a:hover{
@@ -204,7 +204,7 @@ a.title:hover:before{
 
 #projects {
   height: 100%;
-  padding-left: 20%;
+  padding-left: 19%;
   background-color: #FFB732;
   display: flex;
   flex-flow: column nowrap;
@@ -221,7 +221,7 @@ a.title:hover:before{
       margin-left: 5%;
     }
     @media screen and (max-width:600px), screen and (max-height: 420px){
-      padding-left: 20%;
+      padding-left: 14%;
     }
   }
   a:hover{
@@ -237,7 +237,7 @@ a.title:hover:before{
 #past {
   background-color: #F25EA2;
   height: 100%;
-  padding-left: 33%;
+  padding-left: 30%;
 
   a:hover{
     color: #F25EA2;
@@ -249,7 +249,7 @@ a.title:hover:before{
 
 #misc {
   height: 100%;
-  padding-left:33%;
+  padding-left:30%;
   background-image: url("../images/collage.png");
   background-size: 100% auto;
 
@@ -441,7 +441,6 @@ a.title:hover:before{
 
 	box-shadow: 0 0 10px rgba(#FFF, 1);
 
-	/* image replacement properties */
 	overflow: hidden;
 	text-indent: 100%;
 	white-space: nowrap;
@@ -461,12 +460,12 @@ a.title:hover:before{
 		transition: opacity 1s 0s, visibility 0s 0s;
 	}
 
-	&.cd-is-visible { /* the button becomes visible */
+	&.cd-is-visible {
 		visibility: visible;
 		opacity: 1;
 	}
 
-	&.cd-fade-out { /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+	&.cd-fade-out {
 		opacity: .4;
 	}
 
