@@ -1,15 +1,4 @@
-require 'sass/plugin/rack'
-require './server'
-
-Sass::Plugin.options[:style] = :compressed
-use Sass::Plugin::Rack
-
-# disable buffering for Heroku Logplex
-$stdout.sync = true
-
-run Sinatra::Application
-
-configure :production do
+configure :production, :development do
   db = URI.parse(ENV['DATABASE_URL'] || 'postgres://localhost/blogdb')
 
   ActiveRecord::Base.establish_connection(

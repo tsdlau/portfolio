@@ -42,7 +42,7 @@ $(document).ready(function() {
   );
 
   var hellos = {
-    strings: ["", "Hello!", "Hola!", "你好!", "안녕하세요!", "Bonjour!", "नमस्ते!", "What's good?"]
+    strings: ["", "Hello!", "你好!", "Hola!", "안녕하세요!", "नमस्ते!", "What's good?"]
   }
   $(".greeting").typed(hellos);
 
