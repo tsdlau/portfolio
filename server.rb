@@ -1,31 +1,30 @@
-require 'sinatra'
-require 'sinatra/activerecord'
-require './environments'
+require "sinatra"
 require 'hamlit'
-require 'pg'
 
 use Rack::Deflater
 set :haml, { escape_html: false }
 
-class Post < ActiveRecord::Base
+
+get "/" do
+  redirect "/home"
 end
 
-get '/' do
-  redirect '/home'
+get "/home" do
+  haml :"home/home", layout: :"home/layout"
 end
 
-get '/home' do
-  haml :home
+# get "/photos" do
+#   haml :"home/photos", layout: false
+# end
+
+get "/resume.pdf" do
+  send_file File.join(settings.public_folder, "/resume.pdf")
 end
 
-get '/blog' do
-  haml :blog, layout: false
+get "/blog" do
+  haml :"blog/blog", layout: :"blog/layout_blog"
 end
 
-get '/photos' do
-  haml :photos, layout: false
-end
-
-get '/resume.pdf' do
-  send_file File.join(settings.public_folder, '/resume.pdf')
+get "/blog/sample" do
+  haml :"blog/sample", layout: :"blog/layout_blog"
 end

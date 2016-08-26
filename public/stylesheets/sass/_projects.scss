@@ -1,0 +1,26 @@
+#projects {
+  height: 100%;
+  padding-left: 19%;
+  background-color: #FFB732;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  .project-child{
+    width: 90%;
+    .text-white, .text-black{
+      width: 30%;
+      margin-right: 25%;
+    }
+    @media screen and (min-width:600px){
+      margin-left: 5%;
+    }
+    @media screen and (max-width:600px), screen and (max-height: 420px){
+      padding-left: 14%;
+    }
+  }
+  a:hover{
+    color: #FFB732;
+  }
+}

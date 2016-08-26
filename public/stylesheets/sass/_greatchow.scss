@@ -1,0 +1,28 @@
+#greatChowLogo{
+  @include logos;
+  background-image:url("../images/greatchow.png");
+  @media screen and (max-width:599px), screen and (max-height: 420px){
+    visibility: hidden;
+  }
+}
+
+#greatchow1{
+  @include modalimage;
+  background-image: url("../images/greatchow1.jpg");
+}
+#greatchow2{
+  @include modalimage;
+  background-image: url("../images/greatchow2.jpg");
+}
+#greatchow3{
+  @include modalimage;
+  background-image: url("../images/greatchow3.jpg");
+}
+#greatchow4{
+  @include modalimage;
+  background-image: url("../images/greatchow4.jpg");
+}
+#greatchow5{
+  @include modalimage;
+  background-image: url("../images/greatchow5.jpg");
+}

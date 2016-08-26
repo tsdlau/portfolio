@@ -1,0 +1,19 @@
+#contact{
+  background-color: black;
+  height: 100%;
+  padding-left: 45%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  a{
+    font-size: 17px;
+  }
+
+  a:hover{
+    color: black;
+  }
+  @media screen and (max-width:599px){
+    padding-left: 35%;
+  }
+}

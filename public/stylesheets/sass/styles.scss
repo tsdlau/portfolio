@@ -1,41 +1,22 @@
 // ********** IMPORTS AND MIXINS ********** //
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import "../../plugins/materialize/sass/materialize";
-@mixin hoverlinks{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  top: 50%;
-  left: 0;
-  visibility: hidden;
-  transform: scaleX(0);
-  -webkit-transform: scaleX(0);
-  transition: all 0.3s ease-in-out 0s;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-}
-@mixin hoverlinksafter{
-  visibility: visible;
-  transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-}
-@mixin logos{
-  height: 150px;
-  width: 150px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-@mixin modalimage{
-  border:2px solid silver;
-  height: 500px;
-  width: auto;
-  margin: 0 auto;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
+@import 'mixins';
+@import 'about';
+@import 'contact';
+@import 'flixchill';
+@import 'greatchow';
+@import 'elevader';
+@import 'lately';
+@import 'misc';
+@import 'past';
+@import 'projects';
+@import 'navigation';
+@import 'blinkingCursor';
+@import 'scrollToTop';
+@import 'alpha';
+@import 'omega';
+@import 'blog';
 
 // ********** GLOBAL STYLES ********** //
 body, html {
@@ -83,7 +64,7 @@ a.title:hover:before{
   @include hoverlinksafter;
 }
 
-.main-container{
+.main-container {
   height: 100%;
 }
 .blurb{
@@ -142,335 +123,37 @@ a.title:hover:before{
   }
 }
 
-// ********** NAVIGATION ********** //
-.sticky-title {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  margin: 0;
-  overflow: hidden;
-  text-align: center;
-  width: 200px;
-  margin-top: -180px; }
-  .sticky-title .title {
-    display: block;
-    height: 60px;
-    line-height: 60px; }
-  .sticky-title.sticky-title-left {
-    -webkit-transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -moz-transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -ms-transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -o-transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); }
-
-#sideNav {
-  top: 0;
-  left: 0;
-  background-color: black;
-  z-index: 1;
-  position: fixed;
-  height: 100%;
-  width: 60px;
-  overflow: hidden;
-  transition: .5s ease-in-out;
-  font-size: 1.5em;
-  }
-
-#navLink{
-  color: white;
-  text-decoration: none;
-}
-
-// ********** PAGES ********** //
-#about{
-  height: 100%;
-  padding-left: 30%;
-  background-color: #FFF;
-
-  span{
-    font-size: 50px;
-  }
-}
-
-#lately {
-  height: 100%;
-  padding-left: 30%;
-  background-color: #62adf2;
-
-  a:hover{
-    color: #62adf2;
-  }
-}
-
-#projects {
-  height: 100%;
-  padding-left: 19%;
-  background-color: #FFB732;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  align-items: flex-start;
-
-  .project-child{
-    width: 90%;
-    .text-white, .text-black{
-      width: 30%;
-      margin-right: 25%;
-    }
-    @media screen and (min-width:600px){
-      margin-left: 5%;
-    }
-    @media screen and (max-width:600px), screen and (max-height: 420px){
-      padding-left: 14%;
-    }
-  }
-  a:hover{
-    color: #FFB732;
-  }
-}
 .modal-content{
   p{
     font-size: 24px;
   }
 }
 
-#past {
-  background-color: #F25EA2;
-  height: 100%;
-  padding-left: 30%;
-
-  a:hover{
-    color: #F25EA2;
-  }
-  @media screen and (max-width:599px){
-    padding-left: 29%;
-  }
-}
-
-#misc {
-  height: 100%;
-  padding-left:30%;
-  background-image: url("../images/collage.png");
-  background-size: 100% auto;
-
-  .text-white{
-    a{
-      color: silver;
-      opacity: 0.75;
-    }
-  }
-  a:hover{
-    color: rgba(0, 0, 0, 0);
-  }
-  @media screen and (max-width:599px){
-    padding-left: 29%;
-  }
-}
-
-#contact{
-  background-color: black;
-  height: 100%;
-  padding-left: 45%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-
-  a{
-    font-size: 17px;
-  }
-
-  a:hover{
-    color: black;
-  }
-  @media screen and (max-width:599px){
-    padding-left: 35%;
-  }
-}
-
-
-#flixChillLogo{
-  @include logos;
-  background-image:url("../images/flixchill.png");
-  @media screen and (max-width:599px), screen and (max-height: 420px){
-    visibility: hidden;
-  }
-}
-
-#elevaderLogo{
-  @include logos;
-  background-image:url("../images/elevader.png");
-  @media screen and (max-width:599px), screen and (max-height: 420px){
-    visibility: hidden;
-  }
-}
-
-#greatChowLogo{
-  @include logos;
-  background-image:url("../images/greatchow.png");
-  @media screen and (max-width:599px), screen and (max-height: 420px){
-    visibility: hidden;
-  }
-}
-
-#salonSiteLogo{
-  @include logos;
-  background-image:url("../images/salonsite.png")
-}
-
-// ********** IMAGE STYLING ********** //
-#flixchill1{
-  @include modalimage;
-  background-image: url("../images/flixchill1.jpg");
-}
-#flixchill4{
-  @include modalimage;
-  background-image: url("../images/flixchill4.jpg");
-}
-#flixchill5{
-  @include modalimage;
-  background-image: url("../images/flixchill5.jpg");
-}
-#flixchill6{
-  @include modalimage;
-  background-image: url("../images/flixchill6.jpg");
-}
-#flixchill7{
-  @include modalimage;
-  background-image: url("../images/flixchill7.jpg");
-}
-
-#elevader1{
-  @include modalimage;
-  background-image: url("../images/elevader1.jpg");
-}
-#elevader2{
-  @include modalimage;
-  background-image: url("../images/elevader2.jpg");
-}
-#elevader3{
-  @include modalimage;
-  background-image: url("../images/elevader3.jpg");
-}
-#elevader4{
-  @include modalimage;
-  background-image: url("../images/elevader4.jpg");
-}
-#elevader5{
-  @include modalimage;
-  background-image: url("../images/elevader5.jpg");
-}
-
-#greatchow1{
-  @include modalimage;
-  background-image: url("../images/greatchow1.jpg");
-}
-#greatchow2{
-  @include modalimage;
-  background-image: url("../images/greatchow2.jpg");
-}
-#greatchow3{
-  @include modalimage;
-  background-image: url("../images/greatchow3.jpg");
-}
-#greatchow4{
-  @include modalimage;
-  background-image: url("../images/greatchow4.jpg");
-}
-#greatchow5{
-  @include modalimage;
-  background-image: url("../images/greatchow5.jpg");
-}
-
-#salonsite1{
-  @include modalimage;
-  background-image: url("../images/salonsite1.jpg");
-}
-#salonsite2{
-  @include modalimage;
-  background-image: url("../images/salonsite2.jpg");
-}
-#salonsite3{
-  @include modalimage;
-  background-image: url("../images/salonsite3.jpg");
-}
-#salonsite4{
-  height: 500px;
-  width: auto;
-  margin: 0 auto;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("../images/salonsite4.jpg");
-}
-
-// ********** BLINKING CURSOR ********** //
-
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-
-// ********** SCROLL TO TOP ********** //
-.cd-top {
-	display: inline-block;
-	height: 60px;
-	width: 60px;
-
-  border-radius: 12px;
-
-	position: fixed;
-	bottom: 40px;
-	right: 20px;
-
-	box-shadow: 0 0 10px rgba(#FFF, 1);
-
-	overflow: hidden;
-	text-indent: 100%;
-	white-space: nowrap;
-
-	background: rgba(#C0C0C0, 0) url(../images/cd-top-arrow.svg) no-repeat center 50%;
-
-	visibility: hidden;
-	opacity: 0;
-
-	-webkit-transition: opacity .3s 0s, visibility 0s .3s;
-	-moz-transition: opacity .3s 0s, visibility 0s .3s;
-	transition: opacity .3s 0s, visibility 0s .3s;
-
-	&.cd-is-visible, &.cd-fade-out, .no-touch &:hover {
-		-webkit-transition: opacity 1s 0s, visibility 0s 0s;
-		-moz-transition: opacity 1s 0s, visibility 0s 0s;
-		transition: opacity 1s 0s, visibility 0s 0s;
-	}
-
-	&.cd-is-visible {
-		visibility: visible;
-		opacity: 1;
-	}
-
-	&.cd-fade-out {
-		opacity: .4;
-	}
-
-	.no-touch &:hover {
-		background-color: rgba(#C0C0C0, 0);
-		opacity: 1;
-	}
-}
+// #salonSiteLogo{
+//   @include logos;
+//   background-image:url("../images/salonsite.png")
+// }
+//
+// // ********** IMAGE STYLING ********** //
+//
+// #salonsite1{
+//   @include modalimage;
+//   background-image: url("../images/salonsite1.jpg");
+// }
+// #salonsite2{
+//   @include modalimage;
+//   background-image: url("../images/salonsite2.jpg");
+// }
+// #salonsite3{
+//   @include modalimage;
+//   background-image: url("../images/salonsite3.jpg");
+// }
+// #salonsite4{
+//   height: 500px;
+//   width: auto;
+//   margin: 0 auto;
+//   background-position: center;
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   background-image: url("../images/salonsite4.jpg");
+// }

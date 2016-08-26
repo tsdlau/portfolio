@@ -1,0 +1,19 @@
+#misc {
+  height: 100%;
+  padding-left:30%;
+  background-image: url("../images/collage.png");
+  background-size: 100% auto;
+
+  .text-white{
+    a{
+      color: silver;
+      opacity: 0.75;
+    }
+  }
+  a:hover{
+    color: rgba(0, 0, 0, 0);
+  }
+  @media screen and (max-width:599px){
+    padding-left: 29%;
+  }
+}
