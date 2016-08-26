@@ -22,7 +22,7 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  height: 100%;
+  height: auto;
   width: 70%;
   margin-left:10%;
   align-items: center;
@@ -33,5 +33,6 @@
 }
 
 .bodyPost{
-  background-color: rgba(146,141,141,0.4)
+  background-color: rgba(146,141,141,0.4);
+  height: auto;
 }
