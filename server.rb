@@ -25,6 +25,6 @@ get "/blog" do
   haml :"blog/blog", layout: :"blog/layout_blog"
 end
 
-get "/blog/sample" do
-  haml :"blog/sample", layout: :"blog/layout_blog"
+get "/blog/microinteractions" do
+  haml :"blog/microinteractions", layout: :"blog/layout_blog"
 end

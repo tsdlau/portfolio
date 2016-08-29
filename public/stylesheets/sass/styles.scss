@@ -9,8 +9,6 @@
 @import 'navigation';
 @import 'blinkingCursor';
 @import 'scrollToTop';
-@import 'alpha';
-@import 'omega';
 @import 'blog';
 
 // ********** GLOBAL STYLES ********** //
@@ -30,20 +28,10 @@ body, html {
   }
 }
 
-a.title{
-  position: relative;
-}
-a.title:before{
-  @include hoverlinks;
-  background-color: #fff;
-}
-a.title:hover:before{
-  @include hoverlinksafter;
-}
-
 .page{
   height: 100%;
 }
+
 .blurb{
   display: flex;
   flex-flow: row nowrap;
@@ -60,6 +48,8 @@ a.title:hover:before{
 
 .text-black{
   p{
+    margin: 0;
+    padding: 5% 0;
     width: 70%;
     line-height: 100%;
     color: black;
@@ -81,6 +71,8 @@ a.title:hover:before{
 
 .text-white{
   p{
+    margin: 0;
+    padding: 5% 0;
     width: 70%;
     line-height: 100%;
     color: white;

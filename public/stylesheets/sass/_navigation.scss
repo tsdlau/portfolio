@@ -38,3 +38,14 @@
     visibility: hidden;
   }
 }
+
+a.title{
+  position: relative;
+}
+a.title:before{
+  @include hoverlinks;
+  background-color: #fff;
+}
+a.title:hover:before{
+  @include hoverlinksafter;
+}

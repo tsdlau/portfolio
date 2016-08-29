@@ -76,17 +76,45 @@
 #contact{
   background-color: black;
   padding-left: 45%;
+  font-size: .5em;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: space-around;
 
   a{
-    font-size: 17px;
+    line-height: 120%;
+
+    &:hover{
+      color:black;
+    }
   }
 
-  a:hover{
-    color: black;
+  @media screen and (max-width:599px){
+    padding-left: 35%;
   }
+}
+
+#alpha{
+  padding-left: 30%;
+  background-color: #000;
+}
+
+#omega{
+  background-color: white;
+  padding-left: 45%;
+  font-size: .5em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+
+  a{
+    line-height: 120%;
+
+    &:hover{
+      color:white;
+    }
+  }
+
   @media screen and (max-width:599px){
     padding-left: 35%;
   }
