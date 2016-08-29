@@ -1,20 +1,26 @@
-#sampleTitle{
-  background-color: red;
+.ui-state-focus { outline: none; }
+
+.blogPost{
   height: 25%;
-  transition: background-color .5s linear 0s;
+  transition: background-color .8s ease-in-out 0s;
+}
+
+#microinteractions{
+  transition: background-color .8s ease-in-out 0s;
+  background-color: #F2F2F2;
 
   &:hover{
-    background-color: #009999;
+    background-color: red;
   }
 }
 
 #sampletwo{
   background-color: blue;
   height: 25%;
-  transition: background-color .5s linear 0s;
+  transition: background-color .8s ease-in-out 0s;
 
   &:hover{
-    background-color: #B2B200;
+    background-color: #8000ff;
   }
 }
 
@@ -32,7 +38,7 @@
   }
 }
 
-.bodyPost{
+.blogEntry{
   background-color: rgba(146,141,141,0.4);
   height: auto;
 }

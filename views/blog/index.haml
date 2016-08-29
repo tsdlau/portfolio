@@ -1,14 +1,17 @@
 #blogIndex
-  #sampleTitle
+  .blogPost#microinteractions
     .post
       .text-white
-        %p Sample
-  #sampleBody
-    = haml :"blog/sample"
-  #sampletwo
-    .post
-      .text-black
-        %p
-          %a{ href: "/blog/sampletwo"}Sample two
-  #sampleBody
-    = haml :"blog/sample"
+        %p August 29 2016 | Microinteractions
+  .blogSummary
+    %p
+      An investigation into microinteractions and how they make the web <em> feel </em> more human.
+    %a{href: "/blog/microinteractions"} Continue Reading
+    -# = haml :"blog/microinteractions"
+  -# #sampletwo
+  -#   .post
+  -#     .text-black
+  -#       %p
+  -#         %a{ href: "/blog/sampletwo"}Sample two
+  -# #sampleBody
+  -#   = haml :"blog/sample"
