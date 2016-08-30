@@ -3,6 +3,8 @@ $(document).ready(function() {
     var s = skrollr.init({forceHeight: false});
   }
 
+
+  // scroll to top button
   var offset = 300,
 		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
 		offset_opacity = 1300,

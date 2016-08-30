@@ -62,5 +62,10 @@
 
 .blogEntry{
   background-color: rgba(146,141,141,0.4);
-  height: auto;
+  padding-top: 100px;
+
+  h3{
+    padding:0;
+    margin: 0;
+  }
 }

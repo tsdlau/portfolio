@@ -9,4 +9,19 @@ $(document).ready(function() {
     }
   });
 
+  $(window).scroll(
+    {
+      previousTop: 0
+    },
+
+    function(){
+      var currentTop = $(window).scrollTop();
+      if (currentTop < this.previousTop){
+        $(".blogNav").fadeIn();
+      }else{
+        $(".blogNav").fadeOut();
+      }
+      this.previousTop = currentTop;
+    });
+
 });
