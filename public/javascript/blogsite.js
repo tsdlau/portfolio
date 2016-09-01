@@ -9,19 +9,38 @@ $(document).ready(function() {
     }
   });
 
-  $(window).scroll(
-    {
-      previousTop: 0
-    },
+  // Hide nav on scroll down
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navHeight = $('.blogNav').outerHeight();
 
-    function(){
-      var currentTop = $(window).scrollTop();
-      if (currentTop < this.previousTop){
-        $(".blogNav").fadeIn();
-      }else{
-        $(".blogNav").fadeOut();
+  $(window).scroll(function(event){
+    didScroll = true;
+  });
+
+  setInterval(function(){
+    if(didScroll){
+      hasScrolled();
+      didScroll = false;
+    }
+  }, 250);
+
+  function hasScrolled(){
+    var previousTop = $(this).scrollTop();
+
+    //Scroll more than the delta
+    if(Math.abs(lastScrollTop - previousTop) <= delta)
+    return;
+
+    if(previousTop > lastScrollTop && previousTop > navHeight){
+      $('.blogNav').fadeOut();
+    } else{
+      if(previousTop + $(window).height() < $(document).height()){
+        $('.blogNav').fadeIn();
       }
-      this.previousTop = currentTop;
-    });
+    }
+    lastScrollTop = previousTop;
+  }
 
 });

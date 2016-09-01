@@ -61,12 +61,15 @@
 
   .text-white{
     a{
-      color: silver;
-      opacity: 0.75;
+      color: #9d9d9d;
+      text-shadow: 0 0 .01px white;
+      transition: text-shadow .5s ease-in-out 0s;
+
+      &:hover{
+        color: rgba(0,0,0,0);
+        text-shadow: none;
+      }
     }
-  }
-  a:hover{
-    color: rgba(0, 0, 0, 0);
   }
   @media screen and (max-width:599px){
     padding-left: 29%;

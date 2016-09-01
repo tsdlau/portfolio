@@ -1,0 +1,43 @@
+
+.blogEntry{
+  background-color: #F3F4F5;
+  padding-top: 2.2em;
+
+  .header{
+    text-align: center;
+    padding-bottom: 1.5em;
+    width: 80%;
+    margin: auto;
+
+    h3{
+      color: rgba(0,0,0,0.7);
+      padding-top: 50px;
+      margin: 0;
+    }
+
+    h6{
+      color: silver;
+    }
+
+    p{
+      font-family: 'Raleway';
+      font-style: 'extra-light';
+      font-size: .65em;
+    }
+  }
+
+  .headerImage{
+    background-color: white;
+    height: 10em;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+#microinteractionsHeader{
+  background-color: rgba(255, 0, 0, 0.5);
+
+  &:hover{
+    background-color: rgba(255,0,0,1);
+  }
+}

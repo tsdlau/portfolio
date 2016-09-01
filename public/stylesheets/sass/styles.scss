@@ -1,5 +1,7 @@
 // ********** IMPORTS ********** //
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
 @import "../../plugins/materialize/sass/materialize";
 @import 'mixins';
 @import 'pages';
@@ -10,8 +12,9 @@
 @import 'blinkingCursor';
 @import 'scrollToTop';
 @import 'blog';
-@import 'blogPost';
+@import 'blogEntries';
 @import 'blogNav';
+@import 'blogIndex';
 
 // ********** GLOBAL STYLES ********** //
 body, html {
@@ -28,6 +31,11 @@ body, html {
       font-size: 24px !important;
     }
   }
+}
+
+.main-blog-container{
+  height: 100%;
+  font-size: calc(1em + 2vw);
 }
 
 .page{
