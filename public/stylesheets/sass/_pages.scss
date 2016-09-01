@@ -1,0 +1,125 @@
+#about{
+  padding-left: 30%;
+  background-color: #FFF;
+
+  span{
+    font-size: 50px;
+  }
+}
+
+#lately {
+  padding-left: 30%;
+  background-color: #62adf2;
+
+  a:hover{
+    color: #62adf2;
+  }
+}
+
+#projects {
+  padding-left: 19%;
+  background-color: #FFB732;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  .project-child{
+    width: 90%;
+    .text-white, .text-black{
+      width: 30%;
+      margin-right: 25%;
+    }
+    @media screen and (min-width:600px){
+      margin-left: 5%;
+    }
+    @media screen and (max-width:600px), screen and (max-height: 420px){
+      padding-left: 14%;
+    }
+  }
+  a:hover{
+    color: #FFB732;
+  }
+}
+
+#past {
+  background-color: #F25EA2;
+  padding-left: 30%;
+
+  a:hover{
+    color: #F25EA2;
+  }
+  @media screen and (max-width:599px){
+    padding-left: 29%;
+  }
+}
+
+#misc {
+  padding-left:30%;
+  background-image: url("../images/collage.png");
+  background-size: 100% auto;
+
+  .text-white{
+    a{
+      color: black;
+      text-shadow: 0 0 5px white;
+      transition: text-shadow .5s ease-in-out 0s;
+      line-height: 115%;
+
+      &:hover{
+        color: rgba(0,0,0,0);
+        text-shadow: none;
+      }
+    }
+  }
+  @media screen and (max-width:599px){
+    padding-left: 29%;
+  }
+}
+
+#contact{
+  background-color: black;
+  padding-left: 45%;
+  font-size: .5em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+
+  a{
+    line-height: 120%;
+
+    &:hover{
+      color:black;
+    }
+  }
+
+  @media screen and (max-width:599px){
+    padding-left: 35%;
+  }
+}
+
+#alpha{
+  padding-left: 30%;
+  background-color: #000;
+}
+
+#omega{
+  background-color: white;
+  padding-left: 45%;
+  font-size: .5em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+
+  a{
+    line-height: 120%;
+
+    &:hover{
+      color:white;
+    }
+  }
+
+  @media screen and (max-width:599px){
+    padding-left: 35%;
+  }
+}

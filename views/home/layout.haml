@@ -26,12 +26,12 @@
   %body
     #sideNav
       .sticky-title.sticky-title-left{ data: { "0": "left: 80px;", "100p": "left: 20px;", "200p": "left: -40px;", "300p": "left: -100px;", "400p": "left: -160px;", "500p": "left: -220px;"}}
-        %a.title#navLink{href: "#about"}about
-        %a.title#navLink{href: "#lately"}lately
-        %a.title#navLink{href: "#projects"}projects
-        %a.title#navLink{href: "#past"}before
-        %a.title#navLink{href: "#misc"}misc
-        %a.title#navLink{href: "#contact"}contact
+        %a.title.navLink{href: "#about"}about
+        %a.title.navLink{href: "#lately"}lately
+        %a.title.navLink{href: "#projects"}projects
+        %a.title.navLink{href: "#past"}before
+        %a.title.navLink{href: "#misc"}misc
+        %a.title.navLink{href: "#contact"}contact
     .main-container
       = yield
 
