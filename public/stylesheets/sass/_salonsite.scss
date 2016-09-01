@@ -1,0 +1,28 @@
+#salonSiteLogo{
+  @include logos;
+  background-image:url("../images/salonsite.png")
+}
+
+// ********** IMAGE STYLING ********** //
+
+#salonsite1{
+  @include modalimage;
+  background-image: url("../images/salonsite1.jpg");
+}
+#salonsite2{
+  @include modalimage;
+  background-image: url("../images/salonsite2.jpg");
+}
+#salonsite3{
+  @include modalimage;
+  background-image: url("../images/salonsite3.jpg");
+}
+#salonsite4{
+  height: 500px;
+  width: auto;
+  margin: 0 auto;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images/salonsite4.jpg");
+}
