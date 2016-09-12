@@ -83,7 +83,7 @@
   font-size: .5em;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: center;
 
   a{
     line-height: 120%;
@@ -95,6 +95,7 @@
 
   @media screen and (max-width:599px){
     padding-left: 35%;
+    font-size: .9em;
   }
 }
 
