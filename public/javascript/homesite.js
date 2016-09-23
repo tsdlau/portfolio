@@ -55,6 +55,16 @@ $(document).ready(function() {
     }, 500);
   });
 
+  $( "#projectIndex" ).accordion({
+    collapsible: true,
+    active: false,
+    heightStyle: 'content',
+    animate: {
+      easing: "easeOutBounce",
+      duration: 700
+    }
+  });
+
   $('.modal-trigger').leanModal({
       dismissible: true, // Modal can be dismissed by clicking outside of the modal
       opacity: .6, // Opacity of modal background

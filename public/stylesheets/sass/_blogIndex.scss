@@ -1,19 +1,11 @@
 #microinteractions{
-  &:hover{
-    background-color: red;
-  }
-
-  &:focus{
+  &:hover, &:focus{
     background-color: red;
   }
 }
 
 #sampletwo{
-  &:hover{
-    background-color: #8000ff;
-  }
-
-  &:focus{
+  &:hover, &:focus{
     background-color: #8000ff;
   }
 }

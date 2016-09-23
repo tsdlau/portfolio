@@ -1,6 +1,6 @@
 // ********** IMPORTS ********** //
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Raleway:200,300,400';
 
 @import "../../plugins/materialize/sass/materialize";
 @import 'mixins';
@@ -8,6 +8,7 @@
 @import 'flixchill';
 @import 'salonsite';
 @import 'greatchow';
+@import 'insuramatch';
 @import 'elevader';
 @import 'navigation';
 @import 'blinkingCursor';
@@ -25,7 +26,11 @@ body, html {
 
 .main-container {
   height: 100%;
-  font-size: calc(1em + 2vw);
+  font-size: calc(1.3em + 2vw);
+
+  @media screen and (min-width: 1200px){
+    font-size: calc(45px + 0.3vw);
+  }
 }
 
 .main-blog-container{
@@ -34,35 +39,24 @@ body, html {
 }
 
 .page{
-  height: 100%;
-}
-
-.blurb{
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  height: 100%;
-  width: 70%;
-  margin-left:10%;
   align-items: center;
-  @media screen and (max-width: 900px){
-    width: 100%;
-    margin-left: 0%;
-  }
+  min-height: 100%;
+}
+
+#projects.page{
+  height: auto
 }
 
 .text-black{
+  @include textsizing;
+
   p{
-    margin: 0;
-    padding: 5% 0;
-    width: 70%;
-    line-height: 100%;
     color: black;
     a{
-      position: relative;
       color: white;
-      transition: color .5s ease-in-out 0s;
-      white-space: nowrap;
     }
     a:before{
       @include hoverlinks;
@@ -75,17 +69,12 @@ body, html {
 }
 
 .text-white{
+  @include textsizing;
+
   p{
-    margin: 0;
-    padding: 5% 0;
-    width: 70%;
-    line-height: 100%;
     color: white;
     a{
-      position: relative;
       color: black;
-      transition: color .5s ease-in-out 0s;
-      white-space: nowrap;
     }
     a:before{
       @include hoverlinks;
@@ -95,11 +84,17 @@ body, html {
       @include hoverlinksafter;
     }
   }
+
+  // @media screen and (max-width: 900px){
+  //   width: 100%;
+  //   margin-left: 0%;
+  // }
 }
 
 .modal-content{
   p{
-    font-size: 24px;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
   }
 }
 

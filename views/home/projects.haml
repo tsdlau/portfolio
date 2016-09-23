@@ -1,73 +1,62 @@
 #projects.page
-  .project-child
-    .blurb
-      .text-white
-        %p
-          %a.waves-effect.modal-trigger{href: "#flixchillModal"}flix // chill
-          %br
-          %a.waves-effect{href: "https://github.com/tsdlau/flix-chill", style: "font-size: 12px;", target: "_blank"}github | flixchill
-      #flixChillLogo
-  .project-child
-    .blurb
-      .text-black
-        %p
-          %a.waves-effect.modal-trigger{href: "#salonsiteModal"}Salon-Site
-          %br
-          %a.waves-effect{href: "http://staging.amalgam.co/salonsite/", style: "font-size: 12px;"}amalgam.co | salonsite
-      #salonSiteLogo
-  .project-child
-    .blurb
-      .text-white
-        %p
-          %a.waves-effect.modal-trigger{href: "#greatchowModal"}Great Chow
-          %br
-          %a.waves-effect{href: "https://github.com/tsdlau/greatchow", style: "font-size: 12px;", target: "_blank"}github | greatchow
-      #greatChowLogo
-#flixchillModal.modal.modal-fixed-footer
-  .modal-content
-    %h4 flix // chill | May 2016
-    %p allowing people to connect with each other based on similar watched tv shows
-    #flixchill1
-    %p go ahead and sign up with whatever username, email, and password you want (no validations have been set up)
-    #flixchill4
-    %p
-      users can add in their own watched tv shows which utilizes the
-      %a{href:"http://omdbapi.com/"}OMDBapi
-      which effectively scrapes off of IMDB
-    #flixchill5
-    %p users are also able to chat with each other once both parties have accepted the 'chill' request
-    #flixchill6
-    %br
-    #flixchill7
-  .modal-footer
-    %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{href:"http://flix-chill.herokuapp.com/", target: "_blank"}demo
-    %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{href:"https://github.com/tsdlau/flix-chill", target: "_blank"}git
-#greatchowModal.modal.modal-fixed-footer
-  .modal-content
-    %h4 Great Chow | June 2016
-    %p a redesign for the Great Chow restaurants in Quincy and Abington in Massachusetts
-    #greatchow1
-    %p it's heavy on flashy stuff like lots of parallax, big pictures, jquery effects
-    #greatchow2
-    %p a portal was created for the manager to create, edit, or delete special events
-    #greatchow3
-    #greatchow4
-    %p and of course a contact form to the management team at Great Chow
-    #greatchow5
-  .modal-footer
-    %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{href:"http://greatchow.herokuapp.com/", target: "_blank"}demo
-    %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{href:"https://github.com/tsdlau/greatchow", target: "_blank"}git
-#salonsiteModal.modal.modal-fixed-footer
-  .modal-content
-    %h4 Salon-Site | July 2016
-    %p a website for a client who wants to change the way salon services are conducted in the future
-    #salonsite1
-    %p a static website that is actually a revamp of an existing design
-    #salonsite2
-    %p the challenge was to build this in pure HTML/CSS/Javascript - the barebones
-    #salonsite3
-    %p implemented mobile design, too
-    #salonsite4
-  .modal-footer
-    %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{href:"http://staging.amalgam.co/salonsite/"}demo
-    %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{href:"http://amalgam.co/"}amalgam.co
+  #projectIndex
+    .project-title#amalgam
+      %p Amalgam
+    .project-list
+      .project-child
+        .text-white
+          %p
+            %a.waves-effect.modal-trigger{href: "#insuramatchModal"}Insuramatch
+            %br
+            %a.waves-effect{href: "http://amalgam.co/insuramatch-compare/staging/form.html", style: "font-size: 12px;"}amalgam.co | insuramatch
+        #insuramatchLogo
+      .project-child
+        .text-black
+          %p
+            %a.waves-effect.modal-trigger{href: "#salonsiteModal"}Salon-Site
+            %br
+            %a.waves-effect{href: "http://staging.amalgam.co/salonsite/", style: "font-size: 12px;"}amalgam.co | salonsite
+        #salonSiteLogo
+    .project-title#rails
+      %p Launch Academy
+    .project-list
+      .project-child
+        .text-white
+          %p
+            %a.waves-effect.modal-trigger{href: "#flixchillModal"}flix // chill
+            %br
+            %a.waves-effect{href: "https://github.com/tsdlau/flix-chill", style: "font-size: 12px;", target: "_blank"}github | flixchill
+        #flixChillLogo
+      .project-child
+        .text-black
+          %p
+            %a.waves-effect.modal-trigger{href: "#elevaderModal"}Elevader
+            %br
+            %a.waves-effect{href: "https://github.com/filipemir/elevader", style: "font-size: 12px;", target: "_blank"}github | elevader
+        #elevaderLogo
+    .project-title#sideProjects
+      %p Side Projects
+    .project-list
+      .project-child
+        .text-black
+          %p
+            %a.waves-effect.modal-trigger{href: "#currencyexchangeModal"}Currency Exchanger
+            %br
+            %a.waves-effect{href: "https://github.com/tsdlau/golden-ticket-to-hk", style: "font-size: 12px;", target: "_blank"}github | exchanger
+        #exchangeLogo
+      .project-child
+        .text-white
+          %p
+            %a.waves-effect.modal-trigger{href: "#greatchowModal"}Great Chow
+            %br
+            %a.waves-effect{href: "https://github.com/tsdlau/greatchow", style: "font-size: 12px;", target: "_blank"}github | greatchow
+        #greatChowLogo
+      .project-child
+        .text-white
+          %p
+            %a.waves-effect.modal-trigger{href: "#genevastripesModal"}Geneva Stripes
+            %br
+            %a.waves-effect{href: "https://github.com/tsdlau/greatchow", style: "font-size: 12px;", target: "_blank"}github | genevastripes
+        #genevastripesLogo
+
+= haml :"home/modals"

@@ -1,6 +1,6 @@
 #flixChillLogo{
   @include logos;
-  background-image:url("../images/flixchill.png");
+  background-image:url("../images/flixchill.svg");
   @media screen and (max-width:599px), screen and (max-height: 420px){
     visibility: hidden;
   }
