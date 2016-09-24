@@ -63,6 +63,10 @@
           padding: 0;
           margin-right: 70px;
           width: 45%;
+
+          @media screen and (max-width:599px), screen and (max-height: 420px){
+            margin-left: 50%;
+          }
         }
       }
       a:hover{

@@ -1,9 +1,6 @@
 #exchangerLogo{
   @include logos;
   background-image:url("../images/exchanger.png");
-  @media screen and (max-width:599px), screen and (max-height: 420px){
-    visibility: hidden;
-  }
 }
 
 // IMAGES

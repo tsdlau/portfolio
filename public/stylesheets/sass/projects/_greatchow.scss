@@ -1,9 +1,6 @@
 #greatChowLogo{
   @include logos;
   background-image:url("../images/greatchow.png");
-  @media screen and (max-width:599px), screen and (max-height: 420px){
-    visibility: hidden;
-  }
 }
 
 #greatchow1{

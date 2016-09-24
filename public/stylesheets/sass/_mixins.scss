@@ -23,6 +23,9 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  @media screen and (max-width:599px), screen and (max-height: 420px){
+    display: none;
+  }
 }
 @mixin modalimage{
   border: 2px solid silver;

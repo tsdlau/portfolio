@@ -2,10 +2,6 @@
   @include logos;
   background-image:url("../images/trailer.svg");
   background-size: 100px 100px;
-
-  @media screen and (max-width:599px), screen and (max-height: 420px){
-    visibility: hidden;
-  }
 }
 
 // IMAGES

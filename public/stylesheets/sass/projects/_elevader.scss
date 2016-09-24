@@ -1,9 +1,6 @@
 #elevaderLogo{
   @include logos;
   background-image:url("../images/elevader.png");
-  @media screen and (max-width:599px), screen and (max-height: 420px){
-    visibility: hidden;
-  }
 }
 
 #elevader1{
