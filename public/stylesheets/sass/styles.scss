@@ -5,18 +5,19 @@
 @import "../../plugins/materialize/sass/materialize";
 @import 'mixins';
 @import 'pages';
-@import 'flixchill';
-@import 'salonsite';
-@import 'greatchow';
-@import 'insuramatch';
-@import 'elevader';
+@import 'projects/flixchill';
+@import 'projects/salonsite';
+@import 'projects/greatchow';
+@import 'projects/insuramatch';
+@import 'projects/elevader';
+@import 'projects/exchanger';
 @import 'navigation';
 @import 'blinkingCursor';
 @import 'scrollToTop';
-@import 'blog';
-@import 'blogEntries';
-@import 'blogNav';
-@import 'blogIndex';
+@import 'blog/blog';
+@import 'blog/entries';
+@import 'blog/navigation';
+@import 'blog/index';
 
 // ********** GLOBAL STYLES ********** //
 body, html {
@@ -44,10 +45,10 @@ body, html {
   justify-content: center;
   align-items: center;
   min-height: 100%;
-}
 
-#projects.page{
-  height: auto
+  &#projects{
+    height: auto;
+  }
 }
 
 .text-black{
@@ -84,11 +85,6 @@ body, html {
       @include hoverlinksafter;
     }
   }
-
-  // @media screen and (max-width: 900px){
-  //   width: 100%;
-  //   margin-left: 0%;
-  // }
 }
 
 .modal-content{
@@ -102,4 +98,12 @@ body, html {
   a{
     font-size: .5em;
   }
+}
+
+#code{
+  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  background-color: #EEE;
+  white-space: nowrap;
+  display: block;
+  padding: 5px;
 }

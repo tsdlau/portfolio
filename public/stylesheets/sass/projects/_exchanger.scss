@@ -1,0 +1,29 @@
+#exchangerLogo{
+  @include logos;
+  background-image:url("../images/exchanger.png");
+  @media screen and (max-width:599px), screen and (max-height: 420px){
+    visibility: hidden;
+  }
+}
+
+// IMAGES
+#exchanger1{
+  @include modalimage;
+  background-image: url("../images/exchanger1.png");
+}
+#exchanger2{
+  @include modalimage;
+  background-image: url("../images/exchanger2.png");
+}
+#exchanger3{
+  @include modalimage;
+  background-image: url("../images/exchanger3.png");
+}
+#exchanger4{
+  @include modalimage;
+  background-image: url("../images/exchanger4.png");
+}
+#exchanger5{
+  @include modalimage;
+  background-image: url("../images/exchanger5.png");
+}

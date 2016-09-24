@@ -3,6 +3,7 @@
 
   span{
     font-size: 1.3em;
+    white-space: nowrap;
   }
 }
 
@@ -15,7 +16,7 @@
 }
 
 #projects {
-  background-color: #FFB732;
+  background-color: #99CC66;
 
   #projectIndex{
     width: 100%;
@@ -24,11 +25,19 @@
       width: 100%;
       padding: 20px 0;
       cursor: pointer;
-      transition: background-color .5s, color .8s ease-in-out 0s;
+      transition: background-color .4s, color .7s ease-out 0s;
 
-      &:hover, &:focus{
+      &#onDuty:hover, &#onDuty:focus{
         background-color: #272727;
         color: white;
+      }
+
+      &#offDuty{
+        color: white;
+      }
+      &#offDuty:hover, &#offDuty:focus{
+        background-color: white;
+        color: black;
       }
 
       p{
@@ -37,22 +46,26 @@
     }
     .project-list{
       width: 100%;
+      padding: 30px 0;
+
+      @media screen and (min-width:600px){
+        padding-left: 60px;
+      }
 
       .project-child{
-        margin-left: 10%;
-        width: 70%;
+        margin: 0 auto;
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
 
         .text-white, .text-black{
-          margin: 0 auto;
           padding: 0;
+          margin-right: 70px;
           width: 45%;
         }
       }
       a:hover{
-        color: #FFB732;
+        color: #99CC66;
       }
     }
   }
@@ -85,11 +98,15 @@
 }
 
 #contact{
-  background-color: black;
+  background-color: #272727;
   font-size: .5em;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+
+  .contactchild{
+    margin-left: 5%;
+  }
 
   a{
     font-size: 0.8em;

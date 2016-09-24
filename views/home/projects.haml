@@ -1,7 +1,7 @@
 #projects.page
   #projectIndex
-    .project-title#amalgam
-      %p Amalgam
+    .project-title#onDuty
+      %p Work
     .project-list
       .project-child
         .text-white
@@ -17,9 +17,6 @@
             %br
             %a.waves-effect{href: "http://staging.amalgam.co/salonsite/", style: "font-size: 12px;"}amalgam.co | salonsite
         #salonSiteLogo
-    .project-title#rails
-      %p Launch Academy
-    .project-list
       .project-child
         .text-white
           %p
@@ -27,23 +24,16 @@
             %br
             %a.waves-effect{href: "https://github.com/tsdlau/flix-chill", style: "font-size: 12px;", target: "_blank"}github | flixchill
         #flixChillLogo
-      .project-child
-        .text-black
-          %p
-            %a.waves-effect.modal-trigger{href: "#elevaderModal"}Elevader
-            %br
-            %a.waves-effect{href: "https://github.com/filipemir/elevader", style: "font-size: 12px;", target: "_blank"}github | elevader
-        #elevaderLogo
-    .project-title#sideProjects
-      %p Side Projects
+    .project-title#offDuty
+      %p Stuff
     .project-list
       .project-child
         .text-black
           %p
-            %a.waves-effect.modal-trigger{href: "#currencyexchangeModal"}Currency Exchanger
+            %a.waves-effect.modal-trigger{href: "#exchangerModal"}Currency Exchanger
             %br
             %a.waves-effect{href: "https://github.com/tsdlau/golden-ticket-to-hk", style: "font-size: 12px;", target: "_blank"}github | exchanger
-        #exchangeLogo
+        #exchangerLogo
       .project-child
         .text-white
           %p
@@ -52,11 +42,11 @@
             %a.waves-effect{href: "https://github.com/tsdlau/greatchow", style: "font-size: 12px;", target: "_blank"}github | greatchow
         #greatChowLogo
       .project-child
-        .text-white
+        .text-black
           %p
-            %a.waves-effect.modal-trigger{href: "#genevastripesModal"}Geneva Stripes
+            %a.waves-effect.modal-trigger{href: "#elevaderModal"}Elevader
             %br
-            %a.waves-effect{href: "https://github.com/tsdlau/greatchow", style: "font-size: 12px;", target: "_blank"}github | genevastripes
-        #genevastripesLogo
+            %a.waves-effect{href: "https://github.com/filipemir/elevader", style: "font-size: 12px;", target: "_blank"}github | elevader
+        #elevaderLogo
 
 = haml :"home/modals"
