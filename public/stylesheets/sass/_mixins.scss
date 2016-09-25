@@ -43,6 +43,10 @@
   max-width: 640px;
   min-width: 320px;
 
+  @media screen and (max-width:599px), screen and (max-height: 420px){
+    padding-left: 30px;
+  }
+
   p{
     line-height: 110%;
   }
