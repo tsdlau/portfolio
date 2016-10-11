@@ -8,10 +8,10 @@
 }
 
 #lately {
-  background-color: #62adf2;
+  background-color: #FDA02D;
 
   a:hover{
-    color: #62adf2;
+    color: #FDA02D;
   }
 }
 
@@ -76,12 +76,21 @@
 }
 
 #past {
+  background-color: #62adf2;
+
+  a:hover{
+    color: #62adf2;
+  }
+}
+
+#launch {
   background-color: #F25EA2;
 
   a:hover{
     color: #F25EA2;
   }
 }
+
 
 #misc {
   background-image: url("../images/collage.png");
@@ -139,22 +148,33 @@
 }
 
 #omega{
-  background-color: white;
-  padding-left: 45%;
-  font-size: .5em;
+  background-color: #FFFFFF;
+  font-size: .6em;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: center;
+
+  .contactchild{
+    margin-left: 5%;
+
+    .text-white{
+      min-width: 150px;
+      padding: 0;
+      width: auto;
+    }
+  }
 
   a{
+    font-size: 0.8em;
     line-height: 120%;
 
     &:hover{
-      color:white;
+      color: white;
     }
   }
 
   @media screen and (max-width:599px){
-    padding-left: 35%;
+    padding-left: 20%;
+    font-size: 20px;
   }
 }

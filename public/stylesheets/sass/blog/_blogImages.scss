@@ -1,0 +1,21 @@
+@mixin blogImage{
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#microinteractionsImage1{
+  background: url('http://tubikstudio.com/wp-content/uploads/2016/01/pageindicator-tubik-studio.gif');
+
+  @include blogImage;
+}
+
+#microinteractionsImage2{
+  background: url('https://d13yacurqjgara.cloudfront.net/users/107759/screenshots/1911260/loading.gif');
+
+  @include blogImage;
+}
+
+#microinteractionsImage3{
+  background: url('http://tubikstudio.com/wp-content/uploads/2015/12/ui-concept-animation-design.gif');
+}

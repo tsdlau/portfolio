@@ -1,15 +1,25 @@
+@import 'blogImages';
 
 .blogEntry{
   background-color: #F3F4F5;
   padding-top: 2.2em;
+  padding-bottom: 1.5em;
+
+  h5{
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 200;
+    font-size: .40em;
+    color: grey;
+  }
 
   .header{
     text-align: center;
-    padding-bottom: 1.5em;
     width: 80%;
     margin: auto;
+    max-width: 1000px;
 
-    h3{
+    h2{
       color: rgba(0,0,0,0.7);
       padding-top: 50px;
       margin: 0;
@@ -21,16 +31,38 @@
 
     p{
       font-family: 'Raleway';
-      font-style: 'extra-light';
+      font-weight: 200;
       font-size: .65em;
+      color: grey;
     }
   }
 
-  .headerImage{
+  .blogImage{
     background-color: white;
     height: 10em;
     width: 100%;
     margin: auto;
+  }
+
+  .mainContent{
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+
+    h4{
+      padding-top: 50px;
+    }
+
+    p,ul{
+      font-family: 'Raleway';
+      font-weight: 200;
+      font-size: .55em;
+      color: #4c4c4c;
+
+      li{
+        padding-left: 20px;
+      }
+    }
   }
 }
 
@@ -38,6 +70,14 @@
   background-color: rgba(255, 0, 0, 0.5);
 
   &:hover{
-    background-color: rgba(255,0,0,1);
+    background-color: rgba(255, 0, 0, 1);
+  }
+}
+
+#parallaxHeader{
+  background-color: rgba(128, 0, 128, 0.5);
+
+  &:hover{
+    background-color: rgba(128, 0, 128, 1);
   }
 }

@@ -28,3 +28,7 @@ end
 get "/microinteractions" do
   haml :"blog/microinteractions", layout: :"blog/layout_blog"
 end
+
+get "/parallax" do
+  haml :"blog/parallax", layout: :"blog/layout_blog"
+end

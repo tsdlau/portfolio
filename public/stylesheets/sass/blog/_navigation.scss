@@ -97,7 +97,7 @@
        -moz-transform: rotateY( 180deg );
          -o-transform: rotateY( 180deg );
             transform: rotateY( 180deg );
-    transition: background-color 1s ease-in-out 0s;
+    transition: background-color .6s ease-in-out 0s;
     &:hover{
       background-color: white;
       border: black 2px dashed;
@@ -108,7 +108,7 @@
       top: 15%;
       left: 2%;
       color: white;
-      transition: color .4s ease-in-out 0s;
+      transition: color .2s ease-in-out 0s;
 
       &:hover{
         color: black;
