@@ -33,7 +33,7 @@ $(document).ready(function() {
   $('#sideNav').hover(
     function() {
       $(this).css({
-        'width': '240px'
+        'width': '180px'
       });
     },
     function() {
