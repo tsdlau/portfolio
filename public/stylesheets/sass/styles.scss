@@ -114,6 +114,33 @@ body, html {
   padding: 5px;
 }
 
+#LevelUpLogo{
+  background-image: url('../images/LevelUp.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+}
+
+#AmalgamLogo{
+  height: 180px;
+  width: 180px;
+  background-image: url('../images/Amalgam.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#LaunchLogo{
+  height: 100px;
+  width: 100px;
+  background-image: url('../images/Launch.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 // * {
 //   background: #000 !important;
 //   color: #0f0 !important;
