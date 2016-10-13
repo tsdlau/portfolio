@@ -121,6 +121,11 @@ body, html {
   background-repeat: no-repeat;
   height: 100px;
   width: 100px;
+
+  @media screen and (max-width:599px), screen and (max-height: 420px){
+    display: none;
+  }
+
 }
 
 #AmalgamLogo{
@@ -130,6 +135,10 @@ body, html {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+
+  @media screen and (max-width:599px), screen and (max-height: 420px){
+    display: none;
+  }
 }
 
 #LaunchLogo{
@@ -139,6 +148,10 @@ body, html {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+
+  @media screen and (max-width:599px), screen and (max-height: 420px){
+    display: none;
+  }
 }
 
 // * {

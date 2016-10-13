@@ -5,6 +5,13 @@
     font-size: 1.3em;
     white-space: nowrap;
   }
+
+  p{
+    span{
+      white-space: nowrap;
+      font-size: 1em;
+    }
+  }
 }
 
 #lately {
@@ -82,6 +89,10 @@
 
   a:hover{
     color: #62adf2;
+  }
+
+  @media screen and (max-width:599px), screen and (max-height: 420px){
+    text-align: left;
   }
 }
 
