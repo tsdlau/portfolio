@@ -61,7 +61,7 @@ $(document).ready(function() {
     heightStyle: 'content',
     animate: {
       easing: "easeOutBounce",
-      duration: 1000
+      duration: 700
     }
   });
 
