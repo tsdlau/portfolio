@@ -65,10 +65,6 @@ $(document).ready(function() {
     }
   });
 
-  $(".project-title").mouseenter(function(){
-    $(this).effect("bounce", {times: 1}, 300);
-  });
-
   $('.modal-trigger').leanModal({
       dismissible: true, // Modal can be dismissed by clicking outside of the modal
       opacity: .6, // Opacity of modal background
