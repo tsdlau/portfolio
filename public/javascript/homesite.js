@@ -74,4 +74,9 @@ $(document).ready(function() {
       ending_top: '10%', // Ending top style attribute
     }
   );
+// 
+//   $("#insuramatch").click(function() {
+//   window.location = $(this).find("a.waves-effect").attr("href");
+//   return false;
+// });
 });

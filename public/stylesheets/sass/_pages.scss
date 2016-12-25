@@ -32,17 +32,19 @@
       width: 100%;
       padding: 10px 0;
       cursor: pointer;
-      transition: background-color .4s, color .2s ease-in-out 0s;
+      transition: background-color .4s, color .4s ease-in-out 0s;
+      background-color: #161616;
+      color: white;
 
-      &#onDuty:hover, &#onDuty:focus{
-        background-color: #161616;
-        color: white;
+      &#onDuty:hover{
+        background-color: white;
+        color: #161616;
       }
 
       &#offDuty{
         color: white;
       }
-      &#offDuty:hover, &#offDuty:focus{
+      &#offDuty:hover{
         background-color: white;
         color: black;
       }
@@ -64,6 +66,15 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
+        transition: background-color .4s, color .4s ease-in-out 0s;
+
+        &#insuramatch:hover, &#greatchow:hover{
+          background-color: #c1e0a3;
+        }
+
+        &#salonsite:hover{
+          background-color: #4c6633;
+        }
 
         .text-white, .text-black{
           padding: 0;
@@ -106,8 +117,8 @@
 
 
 #misc {
-  background-image: url("../images/collage.png");
-  background-size: 110% auto;
+  background: url("../images/collage.png");
+  background-size: 105% auto;
 
   .text-white{
     a{
@@ -127,7 +138,7 @@
   background-color: #161616;
   font-size: .6em;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   justify-content: center;
 
   .contactchild{

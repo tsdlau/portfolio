@@ -1,15 +1,8 @@
 #projects.page
   #projectIndex
     .project-title#onDuty
-      %p Work
+      %p samples
     .project-list
-      .project-child
-        .text-white
-          %p
-            %a.waves-effect.modal-trigger{href: "#insuramatchModal"}Insuramatch
-            %br
-            %a.waves-effect{href: "http://amalgam.co/insuramatch-compare/staging/form.html", style: "font-size: 12px;"}amalgam.co | insuramatch
-        #insuramatchLogo
       .project-child
         .text-black
           %p
@@ -20,23 +13,6 @@
       .project-child
         .text-white
           %p
-            %a.waves-effect.modal-trigger{href: "#flixchillModal"}flix // chill
-            %br
-            %a.waves-effect{href: "https://github.com/tsdlau/flix-chill", style: "font-size: 12px;", target: "_blank"}github | flixchill
-        #flixChillLogo
-    .project-title#offDuty
-      %p Stuff
-    .project-list
-      .project-child
-        .text-black
-          %p
-            %a.waves-effect.modal-trigger{href: "#exchangerModal"}Currency Exchanger
-            %br
-            %a.waves-effect{href: "https://github.com/tsdlau/golden-ticket-to-hk", style: "font-size: 12px;", target: "_blank"}github | exchanger
-        #exchangerLogo
-      .project-child
-        .text-white
-          %p
             %a.waves-effect.modal-trigger{href: "#greatchowModal"}Great Chow
             %br
             %a.waves-effect{href: "https://github.com/tsdlau/greatchow", style: "font-size: 12px;", target: "_blank"}github | greatchow
@@ -44,9 +20,9 @@
       .project-child
         .text-black
           %p
-            %a.waves-effect.modal-trigger{href: "#elevaderModal"}Elevader
+            %a.waves-effect.modal-trigger{href: "#exchangerModal"}Currency Exchanger
             %br
-            %a.waves-effect{href: "https://github.com/filipemir/elevader", style: "font-size: 12px;", target: "_blank"}github | elevader
-        #elevaderLogo
+            %a.waves-effect{href: "https://github.com/tsdlau/golden-ticket-to-hk", style: "font-size: 12px;", target: "_blank"}github | exchanger
+        #exchangerLogo
 
 = haml :"home/modals"
