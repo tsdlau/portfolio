@@ -5,11 +5,8 @@
 @import "../../plugins/materialize/sass/materialize";
 @import 'mixins';
 @import 'pages';
-@import 'projects/flixchill';
 @import 'projects/salonsite';
 @import 'projects/greatchow';
-@import 'projects/insuramatch';
-@import 'projects/elevader';
 @import 'projects/exchanger';
 @import 'navigation';
 @import 'blinkingCursor';
@@ -18,6 +15,7 @@
 @import 'blog/entries';
 @import 'blog/navigation';
 @import 'blog/index';
+@import 'photography';
 
 // ********** GLOBAL STYLES ********** //
 body, html {
@@ -45,7 +43,7 @@ body, html {
   justify-content: center;
   align-items: center;
   min-height: 100%;
-
+  overflow: hidden;
   &#projects{
     height: auto;
   }
