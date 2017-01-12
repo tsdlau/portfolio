@@ -7,6 +7,7 @@ gem 'puma'
 gem 'hamlit'
 gem 'sass'
 gem 'pg'
+gem 'rack-flash-session'
 
 group :development do
   gem 'shotgun'
