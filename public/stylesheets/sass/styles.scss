@@ -5,11 +5,8 @@
 @import "../../plugins/materialize/sass/materialize";
 @import 'mixins';
 @import 'pages';
-@import 'projects/flixchill';
 @import 'projects/salonsite';
 @import 'projects/greatchow';
-@import 'projects/insuramatch';
-@import 'projects/elevader';
 @import 'projects/exchanger';
 @import 'navigation';
 @import 'blinkingCursor';
@@ -18,6 +15,7 @@
 @import 'blog/entries';
 @import 'blog/navigation';
 @import 'blog/index';
+@import 'photography';
 
 // ********** GLOBAL STYLES ********** //
 body, html {
@@ -45,7 +43,7 @@ body, html {
   justify-content: center;
   align-items: center;
   min-height: 100%;
-
+  overflow: hidden;
   &#projects{
     height: auto;
   }
@@ -115,7 +113,7 @@ body, html {
 }
 
 #LevelUpLogo{
-  background-image: url('../images/LevelUp.png');
+  background-image: url('../images/logos/LevelUp.png');
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -131,7 +129,7 @@ body, html {
 #AmalgamLogo{
   height: 180px;
   width: 180px;
-  background-image: url('../images/Amalgam.svg');
+  background-image: url('../images/logos/Amalgam.svg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -144,7 +142,7 @@ body, html {
 #LaunchLogo{
   height: 100px;
   width: 100px;
-  background-image: url('../images/Launch.png');
+  background-image: url('../images/logos/Launch.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

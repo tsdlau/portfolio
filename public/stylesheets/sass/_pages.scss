@@ -117,12 +117,16 @@
 
 
 #misc {
-  background: url("../images/collage.png");
-  background-size: 105% auto;
+  position: relative;
+
+  #miscbody{
+    z-index:3
+  }
 
   .text-white{
+    text-shadow: 1px 1px 2px black;
     a{
-      text-shadow: 0 0 5px white;
+      text-shadow: 0px 0px 4px #eaeaea;
       transition: text-shadow .5s ease-in-out 0s;
       line-height: 115%;
 
@@ -156,7 +160,7 @@
     line-height: 120%;
 
     &:hover{
-      color:black;
+      color:#161616;
     }
   }
 

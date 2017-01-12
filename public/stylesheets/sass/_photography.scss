@@ -1,0 +1,250 @@
+#photography{
+  img{
+    position: absolute;
+    width: 270px;
+    height: 360px;
+    border: 1px solid black;
+  }
+
+  .black-overlay{
+    background-color:black;
+    opacity:0.45;
+  }
+
+  .silver-overlay{
+    background-color:#cccccc;
+    opacity:0.28;
+  }
+  .black-overlay, .silver-overlay{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+  }
+}
+
+#adirondack{
+  left: 60px;
+  top: 0;
+  opacity:1;
+  @media screen and (max-width:599px), screen and (max-height: 420px){
+    left: 0;
+  }
+}
+#bobert{
+  left:330px;
+  top:0px;
+  opacity:1;
+  @media screen and (max-width:599px), screen and (max-height: 420px){
+    left: 270px;
+  }
+}
+#briana{
+  left:600px;
+  top:0px;
+  opacity:1;
+}
+#reminiscent{
+  left:870px;
+  top:0px;
+  opacity:1;
+}
+#bos{
+  left:1140px;
+  top:0px;
+  opacity:1;
+}
+#jzsmoke{
+  left:1410px;
+  top:0px;
+  opacity:1;
+}
+#esplanade{
+  left:1680px;
+  top:0px;
+  opacity:1;
+}
+#butterfly{
+  left:1950px;
+  top:0px;
+  opacity:1;
+}
+#league{
+  left:2220px;
+  top:0px;
+  opacity:1;
+}
+#fouryears{
+  left:2490px;
+  top:0px;
+  opacity:1;
+}
+
+
+#pianokeys{
+  left:60px;
+  top:360px;
+  opacity:1;
+  @media screen and (max-width:599px), screen and (max-height: 420px){
+    left: 0;
+  }
+}
+#edemame{
+  left:330px;
+  top:360px;
+  opacity:1;
+  @media screen and (max-width:599px), screen and (max-height: 420px){
+    left: 270px;
+  }
+}
+#harvard{
+  left:600px;
+  top:360px;
+  opacity:1;
+}
+#nemo{
+  left:870px;
+  top:360px;
+  opacity:1;
+}
+#painter{
+  left:1140px;
+  top:360px;
+  opacity:1;
+}
+#wesley{
+  left:1410px;
+  top:360px;
+  opacity:1;
+}
+#pumpkins{
+  left:1680px;
+  top:360px;
+  opacity:1;
+}
+#ichigo{
+  left:1950px;
+  top:360px;
+  opacity:1;
+}
+#parrot{
+  left:2220px;
+  top:360px;
+  opacity:1;
+}
+#charlesautumn{
+  left:2490px;
+  top:360px;
+  opacity:1;
+}
+
+
+#nyfruit{
+  left:60px;
+  top:720px;
+  opacity:1;
+  @media screen and (max-width:599px), screen and (max-height: 420px){
+    left: 0;
+  }
+}
+#ked{
+  left:330px;
+  top:720px;
+  opacity:1;
+  @media screen and (max-width:599px), screen and (max-height: 420px){
+    left: 270px;
+  }
+}
+#statesswim{
+  left:600px;
+  top:720px;
+  opacity:1;
+}
+#hocr{
+  left:870px;
+  top:720px;
+  opacity:1;
+}
+#demboiz{
+  left:1140px;
+  top:720px;
+  opacity:1;
+}
+#packing{
+  left:1410px;
+  top:720px;
+  opacity:1;
+}
+#david{
+  left:1680px;
+  top:720px;
+  opacity:1;
+}
+#fountain{
+  left:1950px;
+  top:720px;
+  opacity:1;
+}
+#jessapples{
+  left:2220px;
+  top:720px;
+  opacity:1;
+}
+#ferrari{
+  left:2490px;
+  top:720px;
+  opacity:1;
+}
+
+
+#rain{
+  left:60px;
+  top:1080px;
+  opacity:1;
+}
+#grandmaster{
+  left:330px;
+  top:1080px;
+  opacity:1;
+}
+#sarah{
+  left:600px;
+  top:1080px;
+  opacity:1;
+}
+#speared{
+  left:870px;
+  top:1080px;
+  opacity:1;
+}
+#thomas{
+  left:1140px;
+  top:1080px;
+  opacity:1;
+}
+#commave{
+  left:1410px;
+  top:1080px;
+  opacity:1;
+}
+#bu{
+  left:1680px;
+  top:1080px;
+  opacity:1;
+}
+#castaway{
+  left:1950px;
+  top:1080px;
+  opacity:1;
+}
+#lookup{
+  left:2220px;
+  top:1080px;
+  opacity:1;
+}
+#fanboy{
+  left:2490px;
+  top:1080px;
+  opacity:1;
+}
