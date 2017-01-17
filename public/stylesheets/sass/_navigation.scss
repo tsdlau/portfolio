@@ -37,6 +37,14 @@
   @media screen and (max-width:599px), screen and (max-height: 420px){
     display: none;
   }
+
+  &:hover{
+    width:180px;
+  }
+}
+
+.sideActive{
+  width:180px;
 }
 
 a.title{

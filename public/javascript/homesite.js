@@ -23,20 +23,7 @@ $(document).ready(function() {
 		 	}, scroll_top_duration
 		);
 	});
-
-  $('#sideNav').hover(
-    function(){
-      $(this).css({
-        'width': '180px'
-      });
-    },
-    function(){
-      $(this).css({
-        'width': '60px'
-      });
-    }
-  );
-
+  
   var hellos = {
     strings: ["", "Hello!", "你好!", "Hola!", "안녕하세요!", "नमस्ते!", "What's good?"]
   }
