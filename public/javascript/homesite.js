@@ -3,17 +3,11 @@ $(document).ready(function() {
     var s = skrollr.init({forceHeight: false});
   }
 
+  var offset = 300;
+	var offset_opacity = 1300;
+	var scroll_top_duration = 700;
+  var $back_to_top = $('.cd-top');
 
-  // scroll to top button
-  var offset = 300,
-		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
-		offset_opacity = 1300,
-		//duration of the top scrolling animation (in ms)
-		scroll_top_duration = 700,
-		//grab the "back to top" link
-		$back_to_top = $('.cd-top');
-
-	//hide or show the "back to top" link
 	$(window).scroll(function(){
 		( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
 		if( $(this).scrollTop() > offset_opacity ) {
@@ -74,18 +68,21 @@ $(document).ready(function() {
       ending_top: '10%', // Ending top style attribute
     }
   );
-  var vis = ['adirondack','bobert','briana','reminiscent','bos','jzsmoke','esplanade','butterfly','league','fouryears','david','ferrari','fanboy','lookup','ked','edemame','harvard','nemo','painter','pumpkins','ichigo','parrot','castaway','charlesautumn','fountain','jessapples','wesley','nyfruit','hocr','rain','pianokeys','statesswim','demboiz','packing','grandmaster','sarah','speared','thomas','commave','bu'];
-  var invis = ['riho','otherked','mya','bee','bronze','flower','georgelaughing','guru','josephnyc','karina','peekingred','pistachio','raspberrysnowman','saltypig','zenbonsakura','tsdlau'];
+
+  var vis = ['adirondack','bobert','briana','reminiscent','bos','jzsmoke','esplanade','butterfly','league','fouryears','david','ferrari','fanboy','lookup','ked','edemame','harvard','nemo','painter','pumpkins','ichigo','parrot','castaway','charlesautumn','fountain','jessapples','wesley','nyfruit','hocr','rain','pianokeys','statesswim','demboiz','packing','grandmaster','speared','mya','thomas','commave','bu'];
+  var invis = ['riho','otherked','bee','bronze','flower','georgelaughing','guru','josephnyc','karina','peekingred','tsdlau','pistachio','raspberrysnowman','saltypig','zenbonsakura','sarah'];
 
   function automagick(){
-    var vanish = vis[Math.floor(Math.random()*vis.length)];
-    var vanishIndex=vis.indexOf(vanish);
+    var rand = Math.random().toFixed(5);
+    var vanish = vis[Math.floor(rand*vis.length)];
+    var vanishIndex = vis.indexOf(vanish);
+    var appear = invis[0];
+    var appearIndex=invis.indexOf(appear);
+
     if (vanishIndex > -1){
       vis.splice(vanishIndex, 1);
     }
 
-    var appear = invis[Math.floor(Math.random()*invis.length)];
-    var appearIndex=invis.indexOf(appear);
     if (appearIndex > -1){
       invis.splice(appearIndex, 1);
     }
@@ -99,15 +96,24 @@ $(document).ready(function() {
     $('#'+appear).css({
       left: appearLeft,
       top: appearTop,
-      border: "1px solid black"
+      border: "1px solid black",
+      visibility: "visible"
     }).animate({
       opacity: 1.0},{duration: 1000
       },"easeIn");
 
     $('#'+vanish).animate({
-      opacity: 0},{duration: 1000},"easeOut");
+      opacity: 0},{duration: 1000},"easeOut").delay(1200).queue(function(magicks){
+        $(this).css({
+          border: "none",
+          visibility: "hidden"
+        });
+        magicks();
+      });
 
+      console.log(appear); //names of photos, as they appear
     setTimeout(automagick, 1500);
   }
   automagick();
+
 });

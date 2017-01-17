@@ -15,7 +15,7 @@ $(document).ready(function() {
   var delta = 5;
   var navHeight = $('.blogNav').outerHeight();
 
-  $(window).scroll(function(event){
+  $(window).scroll(function(){
     didScroll = true;
   });
 

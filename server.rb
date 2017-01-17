@@ -17,7 +17,7 @@ end
 #   haml :"home/photos", layout: false
 # end
 
-get "/resume.pdf" do
+get "/resume" do
   send_file File.join(settings.public_folder, "/resume.pdf")
 end
 
