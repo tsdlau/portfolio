@@ -23,7 +23,7 @@ $(document).ready(function() {
 		 	}, scroll_top_duration
 		);
 	});
-  
+
   var hellos = {
     strings: ["", "Hello!", "你好!", "Hola!", "안녕하세요!", "नमस्ते!", "What's good?"]
   }

@@ -9,6 +9,14 @@ $(document).ready(function() {
     }
   });
 
+  var blogGreet = {
+    strings: ["hi! ^1500 <br>^500<br>nice of you to visit this piece of virtual space. ^1000 <br>^500<br>in here,^800 you'll find musings of all sorts.^7000....... you can scroll down now ^3000:)"],
+    typeSpeed: 3,
+    startDelay: 2
+  }
+  $(".welcome").typed(blogGreet);
+
+
   // Hide nav on scroll down
   var didScroll;
   var lastScrollTop = 0;
