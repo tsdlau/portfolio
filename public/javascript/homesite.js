@@ -73,8 +73,8 @@ $(document).ready(function() {
   var invis = ['riho','otherked','bee','bronze','flower','georgelaughing','guru','josephnyc','karina','peekingred','tsdlau','pistachio','raspberrysnowman','saltypig','zenbonsakura','sarah'];
 
   function automagick(){
-    var rand = Math.random().toFixed(5);
-    var vanish = vis[Math.floor(rand*vis.length)];
+    var nextImage = Math.random().toFixed(5);
+    var vanish = vis[Math.floor(nextImage*vis.length)];
     var vanishIndex = vis.indexOf(vanish);
     var appear = invis[0];
     var appearIndex=invis.indexOf(appear);
