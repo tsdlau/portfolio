@@ -84,14 +84,14 @@ $(document).ready(function() {
       vis.splice(vanishIndex, 1);
     }
 
-    var appear = vis[Math.floor(Math.random()*vis.length)];
-    var appearIndex=vis.indexOf(appear);
+    var appear = invis[Math.floor(Math.random()*invis.length)];
+    var appearIndex=invis.indexOf(appear);
     if (appearIndex > -1){
-      vis.splice(appearIndex, 1);
+      invis.splice(appearIndex, 1);
     }
 
     vis.push(appear);
-    vis.push(vanish);
+    invis.push(vanish);
 
     var appearLeft = $('#'+vanish).css("left");
     var appearTop = $('#'+vanish).css("top");
@@ -107,7 +107,7 @@ $(document).ready(function() {
     $('#'+vanish).animate({
       opacity: 0},{duration: 1000},"easeOut");
 
-    setTimeout(automagick, 2000);
+    setTimeout(automagick, 1500);
   }
   automagick();
 });
