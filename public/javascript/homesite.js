@@ -84,35 +84,30 @@ $(document).ready(function() {
       vis.splice(vanishIndex, 1);
     }
 
-    var appear = invis[Math.floor(Math.random()*invis.length)];
-    var appearIndex=invis.indexOf(appear);
+    var appear = vis[Math.floor(Math.random()*vis.length)];
+    var appearIndex=vis.indexOf(appear);
     if (appearIndex > -1){
-      invis.splice(appearIndex, 1);
+      vis.splice(appearIndex, 1);
     }
 
     vis.push(appear);
-    invis.push(vanish);
+    vis.push(vanish);
 
+    var appearLeft = $('#'+vanish).css("left");
+    var appearTop = $('#'+vanish).css("top");
 
-    appearLeft = $('#'+vanish).css("left");
-    appearTop = $('#'+vanish).css("top");
-
-    $(appear).css({
+    $('#'+appear).css({
       left: appearLeft,
-      top: appearTop
+      top: appearTop,
+      border: "1px solid black"
     }).animate({
-      opacity: 1.0,
-      duration: 750
-    })
+      opacity: 1.0},{duration: 1000
+      },"easeIn");
 
-    $(vanish).css({
-      left: 0,
-      top: 0
-    }).animate({
-      opacity: 0,
-      duration: 500
-    })
+    $('#'+vanish).animate({
+      opacity: 0},{duration: 1000},"easeOut");
 
-    setTimeout(automagick, 750);
+    setTimeout(automagick, 2000);
   }
+  automagick();
 });
