@@ -31,12 +31,12 @@ $(document).ready(function() {
 	});
 
   $('#sideNav').hover(
-    function() {
+    function(){
       $(this).css({
         'width': '180px'
       });
     },
-    function() {
+    function(){
       $(this).css({
         'width': '60px'
       });
@@ -48,7 +48,7 @@ $(document).ready(function() {
   }
   $(".greeting").typed(hellos);
 
-  $('.title').on('click', function () {
+  $('.title').on('click', function (){
     var href = $(this).attr('href');
     $('body, HTML').animate({
       scrollTop: $(href).offset().top
@@ -74,9 +74,45 @@ $(document).ready(function() {
       ending_top: '10%', // Ending top style attribute
     }
   );
-// 
-//   $("#insuramatch").click(function() {
-//   window.location = $(this).find("a.waves-effect").attr("href");
-//   return false;
-// });
+  var vis = ['adirondack','bobert','briana','reminiscent','bos','jzsmoke','esplanade','butterfly','league','fouryears','david','ferrari','fanboy','lookup','ked','edemame','harvard','nemo','painter','pumpkins','ichigo','parrot','castaway','charlesautumn','fountain','jessapples','wesley','nyfruit','hocr','rain','pianokeys','statesswim','demboiz','packing','grandmaster','sarah','speared','thomas','commave','bu'];
+  var invis = ['riho','otherked','mya','bee','bronze','flower','georgelaughing','guru','josephnyc','karina','peekingred','pistachio','raspberrysnowman','saltypig','zenbonsakura','tsdlau'];
+
+  function automagick(){
+    var vanish = vis[Math.floor(Math.random()*vis.length)];
+    var vanishIndex=vis.indexOf(vanish);
+    if (vanishIndex > -1){
+      vis.splice(vanishIndex, 1);
+    }
+
+    var appear = invis[Math.floor(Math.random()*invis.length)];
+    var appearIndex=invis.indexOf(appear);
+    if (appearIndex > -1){
+      invis.splice(appearIndex, 1);
+    }
+
+    vis.push(appear);
+    invis.push(vanish);
+
+
+    appearLeft = $('#'+vanish).css("left");
+    appearTop = $('#'+vanish).css("top");
+
+    $(appear).css({
+      left: appearLeft,
+      top: appearTop
+    }).animate({
+      opacity: 1.0,
+      duration: 750
+    })
+
+    $(vanish).css({
+      left: 0,
+      top: 0
+    }).animate({
+      opacity: 0,
+      duration: 500
+    })
+
+    setTimeout(automagick, 750);
+  }
 });
