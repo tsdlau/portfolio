@@ -32,6 +32,16 @@ $(document).ready(function() {
     strings: ["", "Hello!", "你好!", "Hola!", "안녕하세요!", "नमस्ते!", "What's good?"]
   }
   $(".greeting").typed(hellos);
+  
+  $( "#projectIndex" ).accordion({
+    collapsible: true,
+    active: false,
+    heightStyle: 'content',
+    animate: {
+      easing: "easeOutBounce",
+      duration: 700
+    }
+  });
 
   $('.title').on('click', function (){
     var href = $(this).attr('href');
