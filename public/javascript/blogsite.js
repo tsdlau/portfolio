@@ -1,21 +1,15 @@
 $(document).ready(function() {
-  $( "#blogIndex" ).accordion({
-    collapsible: true,
-    active: false,
-    heightStyle: 'content',
-    animate: {
-      easing: "easeOutBounce",
-      duration: 700
-    }
-  });
 
   var blogGreet = {
+<<<<<<< HEAD
     strings: ["hi! ^1500 <br>^500<br>nice of you to visit this piece of virtual space. ^1000 <br>^500<br>in here,^800 you'll find musings of all sorts.^4000....... <br>you can scroll down now ^2000:) "],
+=======
+    strings: ["hi! ^1500 <br>^500<br>nice of you to visit this piece of virtual space. ^1000 <br>^500<br>in here,^800 you'll find musings of all sorts.^3500...... <br>you can scroll down now ^1800:) "],
+>>>>>>> a4d84e76acf822d98b2bb7a38d8f1bd46163ac58
     typeSpeed: 3,
     startDelay: 2
   }
   $(".welcome").typed(blogGreet);
-
 
   // Hide nav on scroll down
   var didScroll;
@@ -37,7 +31,6 @@ $(document).ready(function() {
   function hasScrolled(){
     var previousTop = $(this).scrollTop();
 
-    //Scroll more than the delta
     if(Math.abs(lastScrollTop - previousTop) <= delta)
     return;
 
@@ -50,5 +43,10 @@ $(document).ready(function() {
     }
     lastScrollTop = previousTop;
   }
+
+  $('.blogTitle').click(function(){
+    $(this).children('p').fadeOut('slow');
+    $(this).children('.summary').fadeIn('slow');
+  });
 
 });
