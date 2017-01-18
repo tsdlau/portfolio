@@ -29,10 +29,10 @@ $(document).ready(function() {
 	});
 
   var hellos = {
-    strings: ["", "Hello!", "你好!", "Hola!", "안녕하세요!", "नमस्ते!", "What's good?"]
+    strings: ["^1000Hello!", "你好!", "Hola!", "안녕하세요!", "नमस्ते!", "What's good?"]
   }
   $(".greeting").typed(hellos);
-  
+
   $( "#projectIndex" ).accordion({
     collapsible: true,
     active: false,
