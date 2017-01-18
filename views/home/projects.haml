@@ -1,28 +1,28 @@
 #projects.page
   #projectIndex
     .project-title#onDuty
-      %p samples
+      %p selected
     .project-list
       .project-child
         .text-black
           %p
-            %a.waves-effect.modal-trigger{href: "#salonsiteModal"}Salon-Site
+            %a.waves-effect{href: "http://staging.amalgam.co/salonsite/", target: "_blank"}Salon-Site
             %br
-            %a.waves-effect{href: "http://staging.amalgam.co/salonsite/", style: "font-size: 12px;"}amalgam.co | salonsite
+            %a.waves-effect.modal-trigger{href: "#salonsiteModal", style: "font-size: 12px;"}amalgam.co | salonsite
         #salonSiteLogo
       .project-child
         .text-white
           %p
-            %a.waves-effect.modal-trigger{href: "#greatchowModal"}Great Chow
+            %a.waves-effect{href: "http://greatchow.herokuapp.com", target: "_blank"}Great Chow
             %br
-            %a.waves-effect{href: "https://github.com/tsdlau/greatchow", style: "font-size: 12px;", target: "_blank"}github | greatchow
+            %a.waves-effect.modal-trigger{href: "#greatchowModal", style: "font-size: 12px;"}github | greatchow
         #greatChowLogo
       .project-child
         .text-black
           %p
-            %a.waves-effect.modal-trigger{href: "#exchangerModal"}Currency Exchanger
+            %a.waves-effect{href: "https://github.com/tsdlau/golden-ticket-to-hk", target: "_blank"}Currency Exchanger
             %br
-            %a.waves-effect{href: "https://github.com/tsdlau/golden-ticket-to-hk", style: "font-size: 12px;", target: "_blank"}github | exchanger
+            %a.waves-effect.modal-trigger{href: "#exchangerModal", style: "font-size: 12px;"}github | exchanger
         #exchangerLogo
 
 = haml :"home/modals"

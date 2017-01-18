@@ -7,6 +7,7 @@
   }
 
   p{
+
     span{
       white-space: nowrap;
       font-size: 1em;
@@ -16,7 +17,6 @@
 
 #lately {
   background-color: #FDA02D;
-
   a:hover{
     color: #FDA02D;
   }
@@ -116,11 +116,11 @@
 }
 
 
-#misc {
+#photography {
   position: relative;
 
   #miscbody{
-    z-index:3
+    z-index:3;
   }
 
   .text-white{
@@ -172,6 +172,10 @@
 
 #alpha{
   background-color: #161616;
+  span{
+    color:white;
+  }
+
 }
 
 #omega{

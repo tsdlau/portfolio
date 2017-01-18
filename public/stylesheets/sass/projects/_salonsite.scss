@@ -7,15 +7,15 @@
 
 #salonsite1{
   @include modalimage;
-  background-image: url("../images/salonsite1.jpg");
+  background-image: url("../images/projects/salonsite1.jpg");
 }
 #salonsite2{
   @include modalimage;
-  background-image: url("../images/salonsite2.jpg");
+  background-image: url("../images/projects/salonsite2.jpg");
 }
 #salonsite3{
   @include modalimage;
-  background-image: url("../images/salonsite3.jpg");
+  background-image: url("../images/projects/salonsite3.jpg");
 }
 #salonsite4{
   height: 500px;
@@ -24,5 +24,5 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../images/salonsite4.jpg");
+  background-image: url("../images/projects/salonsite4.jpg");
 }
