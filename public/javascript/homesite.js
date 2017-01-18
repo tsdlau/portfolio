@@ -2,6 +2,10 @@ $(document).ready(function() {
   if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     var s = skrollr.init({forceHeight: false});
   }
+  setTimeout(function(){
+    $('#sideNav').css('opacity',1)},
+    800
+  );
 
   var offset = 300;
 	var offset_opacity = 1300;
@@ -34,16 +38,6 @@ $(document).ready(function() {
     $('body, HTML').animate({
       scrollTop: $(href).offset().top
     }, 500);
-  });
-
-  $( "#projectIndex" ).accordion({
-    collapsible: true,
-    active: false,
-    heightStyle: 'content',
-    animate: {
-      easing: "easeOutBounce",
-      duration: 700
-    }
   });
 
   $('.modal-trigger').leanModal({
