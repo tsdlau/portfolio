@@ -10,7 +10,7 @@ $(document).ready(function() {
   });
 
   var blogGreet = {
-    strings: ["hi! ^1500 <br>^500<br>nice of you to visit this piece of virtual space. ^1000 <br>^500<br>in here,^800 you'll find musings of all sorts.^7000....... you can scroll down now ^3000:)"],
+    strings: ["hi! ^1500 <br>^500<br>nice of you to visit this piece of virtual space. ^1000 <br>^500<br>in here,^800 you'll find musings of all sorts.^4000....... <br>you can scroll down now ^2000:) "],
     typeSpeed: 3,
     startDelay: 2
   }
