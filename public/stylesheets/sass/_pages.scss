@@ -165,8 +165,8 @@
     }
   }
 
-  @media screen and (max-width:599px){
-    padding-left: 20%;
+  @media screen and (max-width:1100px){
+    flex-flow: column nowrap;
     font-size: 20px;
   }
 }
