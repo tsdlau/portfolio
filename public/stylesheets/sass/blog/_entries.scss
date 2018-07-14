@@ -81,3 +81,11 @@
     background-color: rgba(128, 0, 128, 1);
   }
 }
+
+#weborientedcultureHeader{
+  background-color: rgba(253, 200, 7, 0.5);
+
+  &:hover{
+    background-color: rgba(253, 200, 7, 1);
+  }
+}
