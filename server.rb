@@ -28,8 +28,8 @@ get '/microinteractions' do
   haml :'blog/microinteractions', layout: :'blog/layout_blog'
 end
 
-get '/groupdynmics' do
-  haml :'blog/groupdynamics', layout: :'blog/layout_blog'
+get '/weborientedculture' do
+  haml :'blog/weborientedculture', layout: :'blog/layout_blog'
 end
 
 get '/parallax' do
