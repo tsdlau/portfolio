@@ -88,7 +88,7 @@ $(document).ready(function() {
       left: appearLeft,
       top: appearTop,
       border: "1px solid black",
-      visibility: "visible"
+      display: "inline"
     }).animate({
       opacity: 1.0},{duration: 1000
       },"easeIn");
@@ -97,7 +97,7 @@ $(document).ready(function() {
       opacity: 0},{duration: 1000},"easeOut").delay(1200).queue(function(magicks){
         $(this).css({
           border: "none",
-          visibility: "hidden"
+          display: "none"
         });
         magicks();
       });
