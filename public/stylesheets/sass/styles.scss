@@ -3,17 +3,18 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway:200,300,400';
 
 @import "../../plugins/materialize/sass/materialize";
+@import 'navigation';
 @import 'mixins';
 @import 'pages';
 @import 'projects/salonsite';
 @import 'projects/greatchow';
 @import 'projects/exchanger';
-@import 'navigation';
 @import 'blinkingCursor';
 @import 'scrollToTop';
 @import 'blog/entries';
 @import 'blog/navigation';
 @import 'blog/chapters';
+@import 'blog/cool_shit';
 @import 'automagick';
 
 // ********** GLOBAL STYLES ********** //

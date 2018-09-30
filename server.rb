@@ -35,3 +35,7 @@ end
 get '/parallax' do
   haml :'blog/parallax', layout: :'blog/layout_blog'
 end
+
+get '/cool_shit' do
+  haml :'blog/cool_shit'
+end
