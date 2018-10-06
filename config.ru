@@ -1,10 +1,10 @@
+require 'active_support/core_ext/hash/compact'
+require 'active_support/core_ext/module'
 require 'sass/plugin/rack'
-require './server'
-
+root = ::File.dirname(__FILE__)
+require ::File.join( root, 'app' )
 Sass::Plugin.options[:style] = :compressed
 use Sass::Plugin::Rack
-
-# disable buffering for Heroku Logplex
 $stdout.sync = true
 
-run Sinatra::Application
+run Portfolio.new
