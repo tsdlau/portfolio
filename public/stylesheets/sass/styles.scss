@@ -57,12 +57,6 @@ body, html {
     a{
       color: white;
     }
-    a:before{
-      background-color: #fff;
-    }
-    a:hover:before{
-      @include hoverlinksafter;
-    }
   }
 }
 
@@ -73,12 +67,6 @@ body, html {
     color: white;
     a{
       color: black;
-    }
-    a:before{
-      background-color: #000;
-    }
-    a:hover:before{
-      @include hoverlinksafter;
     }
   }
 }

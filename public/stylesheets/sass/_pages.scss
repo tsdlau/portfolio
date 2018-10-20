@@ -17,10 +17,10 @@
 #lately {
   background-color: #FDA02D;
   a {
+    padding-right: 5px;
     line-height: 115%;
-    transition: text-shadow color 1.4s ease-out;
 
-    &:after{
+    &::after {
       content: '';
       display: block;
       position: absolute;
@@ -34,14 +34,16 @@
       transform: translateX(-120px) skewX(50deg);
       transition: .2s linear;
     }
-    &:hover{
-      color: #FDA02D;
-      text-shadow: 0 0 3px black;
 
-      &:after{
+    &:hover{
+      color: white;
+      text-shadow: 0 0 7px black;
+      transition: .7s ease-out;
+
+      &::after{
         transform: translateX(180px) skewX(50deg);  
         opacity: 1;
-        transition: .7s ease-in;
+        transition: .6s ease-in;
       }
     }
   }
@@ -72,8 +74,6 @@
         box-shadow:none;
         border-color:transparent;
       }
-
-
 
       p{
         text-align: center;
@@ -124,13 +124,31 @@
   text-align: right;
 
   a {
-    text-shadow: none;
-    transition: text-shadow color .5s ease-in-out 0s;
-    line-height: 115%;
+    padding-left: 5px;
+    transition: color text-shadow 0.8s;
 
-    &:hover {
-      color: #62ADF2;
-      text-shadow: 1px 1px 2px black;
+    &::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: left center;
+    background: black;
+    z-index: -1;
+    transition: 0.5s ease-out;
+    }
+
+    &:hover{
+      text-shadow: 0 0 7px black;
+      color: white;
+      
+      &::after{
+        transform: scaleY(1);
+        opacity: 0;
+      }
     }
   }
 
@@ -141,9 +159,12 @@
 
 #launch {
   background-color: #F25EA2;
+  padding-right: 5px;
 
-  a:hover{
+  a:hover {
     color: #F25EA2;
+    text-shadow: 0 0 3px black;
+    transition: all .4s linear;
   }
 }
 
@@ -189,9 +210,29 @@
   a{
     font-size: 0.8em;
     line-height: 120%;
+    padding: 3px 5px;
+
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scaleX(0);
+      transform-origin: bottom center;
+      background: white;
+      z-index: -1;
+      transition: 0.5s ease-out;
+    }
 
     &:hover{
-      color:#161616;
+      color: black;
+      transition: .5s ease-in;
+
+      &::after{
+        transform: scaleX(1);
+      }
     }
   }
 
