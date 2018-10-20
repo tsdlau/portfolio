@@ -58,7 +58,6 @@ body, html {
       color: white;
     }
     a:before{
-      @include hoverlinks;
       background-color: #fff;
     }
     a:hover:before{
@@ -76,7 +75,6 @@ body, html {
       color: black;
     }
     a:before{
-      @include hoverlinks;
       background-color: #000;
     }
     a:hover:before{
