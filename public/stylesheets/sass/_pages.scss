@@ -37,7 +37,7 @@
 
     &:hover{
       color: white;
-      text-shadow: 0 0 7px black;
+      text-shadow: 0 0 7px white;
       transition: .7s ease-out;
 
       &::after{
@@ -124,26 +124,26 @@
   text-align: right;
 
   a {
-    padding-left: 5px;
-    transition: color text-shadow 0.8s;
+    padding: 3px;
 
     &::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: scaleY(0);
-    transform-origin: left center;
-    background: black;
-    z-index: -1;
-    transition: 0.5s ease-out;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scaleY(0);
+      transform-origin: left center;
+      background: black;
+      z-index: -1;
+      transition: 0.5s ease-out;
     }
 
     &:hover{
-      text-shadow: 0 0 7px black;
-      color: white;
+      text-shadow: 3px 3px 0px white;
+      color: #62ADF2;
+      transition: 0.5s ease-out;
       
       &::after{
         transform: scaleY(1);
@@ -159,12 +159,36 @@
 
 #launch {
   background-color: #F25EA2;
-  padding-right: 5px;
 
-  a:hover {
-    color: #F25EA2;
-    text-shadow: 0 0 3px black;
-    transition: all .4s linear;
+  a {
+    padding: 3px;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: black;
+      width: 30px;
+      height: 100%;
+      left: 120px;
+      top: 0;
+      opacity: 0;
+      filter: blur(2px);
+      transform: translateX(200px) skewX(0deg);
+      transition: .2s linear;
+    }
+
+    &:hover{
+      color: #F25EA2;
+      text-shadow: 0 0 7px black;
+      transition: .7s ease-out;
+
+      &::after{
+        transform: translateX(-180px) skewY(50deg);  
+        opacity: 1;
+        transition: .6s ease-in;
+      }
+    }
   }
 }
 
@@ -178,13 +202,16 @@
 
   .text-white{
     text-shadow: 1px 1px 2px black;
+
     a{
-      text-shadow: 0px 0px 4px #eaeaea;
       transition: text-shadow color .5s ease-in-out 0s;
       line-height: 115%;
+      text-shadow: 0px 0px 4px black;
+      color: rgba(0,0,0,0);
 
       &:hover{
-        color: rgba(0,0,0,0);
+        text-shadow: 0px 0px 4px #eaeaea;
+        color: black
       }
     }
   }
