@@ -112,6 +112,20 @@ body, html {
 
 }
 
+#GrubhubLogo{
+  background-image: url('../images/logos/Grubhub.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+
+  @media screen and (max-width:599px), screen and (max-height: 420px){
+    display: none;
+  }
+
+}
+
 #AmalgamLogo{
   height: 180px;
   width: 180px;
