@@ -60,8 +60,8 @@ $(document).ready(function() {
     }
   );
 
-  var vis = ['adirondack','bobert','briana','reminiscent','bos','jzsmoke','esplanade','butterfly','league','fouryears','david','ferrari','fanboy','lookup','ked','edemame','harvard','nemo','painter','pumpkins','ichigo','parrot','castaway','charlesautumn','fountain','jessapples','wesley','nyfruit','hocr','rain','pianokeys','statesswim','demboiz','packing','grandmaster','speared','mya','thomas','commave','bu'];
-  var invis = ['riho','otherked','bee','bronze','flower','georgelaughing','guru','josephnyc','karina','peekingred','tsdlau','pistachio','raspberrysnowman','saltypig','zenbonsakura','sarah','shadowlight','snowsalt','snowmiri'];
+  var vis = ['adirondack','theroadgoeseveron','briana','reminiscent','bos','jzsmoke','sophie','butterfly','league','fouryears','sujit','ferrari','fanboy','lookup','ked','edemame','summerdreamin','nemo','painter','pumpkins','shoesoptional','parrot','castaway','jz2','fountain','roadtothetop','wesley','bigbeach','hocr','rain','pianokeys','statesswim','demboiz','packing','grandmaster','speared','mya','thomas','commave','bu'];
+  var invis = ['riho','bobert','bee','bronze','flower','georgelaughing','guru','josephnyc','karina','peekingred','tsdlau','pistachio','raspberrysnowman','justchillin','zenbonsakura','sarah','shadowlight','snowsalt','snowmiri'];
 
   function automagick(){
     var nextImage = Math.random().toFixed(5);
