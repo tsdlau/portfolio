@@ -33,16 +33,6 @@ $(document).ready(function() {
   }
   $(".greeting").typed(hellos);
 
-  $( "#projectIndex" ).accordion({
-    collapsible: true,
-    active: false,
-    heightStyle: 'content',
-    animate: {
-      easing: "easeOutBounce",
-      duration: 700
-    }
-  });
-
   $('.title').on('click', function (){
     var href = $(this).attr('href');
     $('body, HTML').animate({

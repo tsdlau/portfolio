@@ -16,77 +16,54 @@
 
 #lately {
   background-color: #000000;
-  a {
-    padding-right: 5px;
-    line-height: 115%;
-
-    &::after {
-      content: '';
-      display: block;
-      position: absolute;
-      background: white;
-      width: 30px;
-      height: 100%;
-      left: 30px;
-      top: 0;
-      opacity: 0;
-      filter: blur(2px);
-      transform: translateX(-120px) skewX(50deg);
-      transition: .2s linear;
-    }
-
-    &:hover{
-      color: white;
-      text-shadow: 0 0 7px white;
-      transition: .7s ease-out;
-
-      &::after{
-        transform: translateX(180px) skewX(50deg);  
-        opacity: 1;
-        transition: .6s ease-in;
-      }
-    }
-  }
-}
-
-#before {
-  background-color: #FDA02D;
 
   a {
-    padding: 3px;
+    color: #888888;
+    -webkit-transition: color 0.3s;
+       -moz-transition: color 0.3s;
+            transition: color 0.3s;
 
-    &::after{
-      content: "";
+    &::before, &::after {
       position: absolute;
-      bottom: 0;
       left: 0;
       width: 100%;
-      height: 100%;
-      transform: scaleY(0);
-      transform-origin: left center;
-      background: black;
-      z-index: -1;
-      transition: 0.5s ease-out;
+      height: 2px;
+      background: #fff;
+      content: '';
+      opacity: 0;
+      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+         -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+              transition: opacity 0.3s, transform 0.3s;
+       -webkit-transform: translateY(-10px);
+          -moz-transform: translateY(-10px);
+               transform: translateY(-10px);
     }
 
-    &:hover{
-      color: white;
-      text-shadow: 0 0 7px white;
-      transition: .7s ease-out;
+    &::before {
+      top: 0;
+      -webkit-transform: translateY(-10px);
+         -moz-transform: translateY(-10px);
+              transform: translateY(-10px);
+    }
 
-      &::after{
-        transform: translateX(180px) skewX(50deg);  
-        opacity: 1;
-        transition: .6s ease-in;
-      }
+    &::after{
+      bottom: 0;
+      -webkit-transform: translateY(10px);
+         -moz-transform: translateY(10px);
+              transform: translateY(10px);
+    }
+
+    &:hover, &:focus{
+      color: #fff;
     }
   }
 }
 
 #merger {
-  background-color: #D43742;
+  background-color: #F33746;
+
   a {
-    padding-right: 3px;
+    padding: 0;
 
     &::after {
       content: '';
@@ -95,7 +72,6 @@
       background: white;
       width: 30px;
       height: 100%;
-      left: 30px;
       top: 0;
       opacity: 0;
       filter: blur(2px);
@@ -110,6 +86,40 @@
 
       &::after{
         transform: translateX(180px) skewX(50deg);  
+        opacity: 1;
+        transition: .6s ease-in;
+      }
+    }
+  }
+}
+
+#levelup {
+  background-color: #FDA02D;
+  text-align: right;
+
+  a {
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: white;
+      width: 30px;
+      height: 100%;
+      left: 30px;
+      top: 0;
+      opacity: 0;
+      filter: blur(2px);
+      transform: translateX(-120px) skewX(50deg);
+      transition: .4s linear;
+    }
+
+    &:hover{
+      color: white;
+      text-shadow: 0 0 7px white;
+      transition: .7s ease-out;
+
+      &::after{
+        transform: translateX(320px) skewX(50deg);  
         opacity: 1;
         transition: .6s ease-in;
       }
@@ -122,8 +132,6 @@
   text-align: right;
 
   a {
-    padding: 3px;
-
     &::after{
       content: "";
       position: absolute;
@@ -159,8 +167,6 @@
   background-color: #F25EA2;
 
   a {
-    padding: 3px;
-
     &::after {
       content: '';
       display: block;
