@@ -6,11 +6,9 @@
 @import 'navigation';
 @import 'mixins';
 @import 'pages';
-@import 'projects/salonsite';
-@import 'projects/greatchow';
-@import 'projects/exchanger';
 @import 'blinkingCursor';
 @import 'scrollToTop';
+@import 'logos';
 @import 'blog/entries';
 @import 'blog/navigation';
 @import 'blog/chapters';
@@ -93,72 +91,6 @@ body, html {
   white-space: nowrap;
   display: block;
   padding: 5px;
-}
-
-#RueGiltGroupeLogo{
-  background-image: url('../images/logos/RueGiltGroupe.png');
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 150px;
-  width: 150px;
-
-  @media screen and (max-width:599px), screen and (max-height: 420px){
-    display: none;
-  }
-}
-
-#LevelUpLogo{
-  background-image: url('../images/logos/LevelUp.png');
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100px;
-  width: 100px;
-  margin-left: 60px;
-
-  @media screen and (max-width:599px), screen and (max-height: 420px){
-    display: none;
-  }
-}
-
-#GrubhubLogo{
-  background-image: url('../images/logos/Grubhub.png');
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 140px;
-  width: 140px;
-
-  @media screen and (max-width:599px), screen and (max-height: 420px){
-    display: none;
-  }
-}
-
-#AmalgamLogo{
-  height: 180px;
-  width: 180px;
-  background-image: url('../images/logos/Amalgam.svg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-
-  @media screen and (max-width:599px), screen and (max-height: 420px){
-    display: none;
-  }
-}
-
-#LaunchLogo{
-  height: 100px;
-  width: 100px;
-  background-image: url('../images/logos/Launch.png');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-
-  @media screen and (max-width:599px), screen and (max-height: 420px){
-    display: none;
-  }
 }
 
 // * {
