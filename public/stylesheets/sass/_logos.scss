@@ -3,22 +3,8 @@
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 150px;
-  width: 150px;
-
-  @media screen and (max-width:599px), screen and (max-height: 420px){
-    display: none;
-  }
-}
-
-#LevelUpLogo{
-  background-image: url('../images/logos/LevelUp.png');
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
   height: 100px;
   width: 100px;
-  margin-left: 60px;
 
   @media screen and (max-width:599px), screen and (max-height: 420px){
     display: none;
@@ -32,6 +18,21 @@
   background-repeat: no-repeat;
   height: 110px;
   width: 110px;
+  margin-right: 30px;
+  margin-left: 50px;
+
+  @media screen and (max-width:599px), screen and (max-height: 420px){
+    display: none;
+  }
+}
+
+#LevelUpLogo{
+  background-image: url('../images/logos/LevelUp.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
 
   @media screen and (max-width:599px), screen and (max-height: 420px){
     display: none;

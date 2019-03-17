@@ -1,0 +1,32 @@
+#launch {
+  background-color: #F25EA2;
+
+  a {
+    position: relative;
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+    color: black;
+    text-shadow: none;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      max-width: 0;
+      color: #fff;
+      content: attr(data-hover);
+      -webkit-transition: max-width 0.7s;
+         -moz-transition: max-width 0.7s;
+              transition: max-width 0.7s;
+      white-space: nowrap;
+    }
+
+    &:hover::before, &:focus::before {
+      max-width: 100%;
+      border-right: 2px solid #fff;
+    }
+  }
+
+}

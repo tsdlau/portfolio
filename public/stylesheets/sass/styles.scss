@@ -5,14 +5,11 @@
 @import "../../plugins/materialize/sass/materialize";
 @import 'navigation';
 @import 'mixins';
-@import 'pages';
+@import 'pages/pages';
 @import 'blinkingCursor';
 @import 'scrollToTop';
 @import 'logos';
-@import 'blog/entries';
-@import 'blog/navigation';
-@import 'blog/chapters';
-@import 'blog/cool_shit';
+@import 'blog/blog';
 @import 'automagick';
 
 // ********** GLOBAL STYLES ********** //
@@ -42,6 +39,17 @@ body, html {
   align-items: center;
   min-height: 100%;
   overflow: hidden;
+
+  &:after, &::before {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+  }
+
+  @media screen and (max-width:599px), screen and (max-height: 420px){
+    text-align: left;
+  }
 }
 
 .text-black{
