@@ -7,11 +7,11 @@
     outline: none;
     text-decoration: none;
     padding-right: 3px;
-    color: black;
-    text-shadow: 0 0 10px silver;
-    -webkit-transition: color 0.3s;
-       -moz-transition: color 0.3s;
-            transition: color 0.3s;
+    color: rgba(100, 100, 100, 0.8);
+    text-shadow: 0 0 3px silver;
+    -webkit-transition: color text-shadow 0.5s;
+       -moz-transition: color text-shadow 0.5s;
+            transition: color text-shadow 0.5s;
 
     &::before, &::after {
       position: absolute;
@@ -45,6 +45,7 @@
 
     &:hover, &:focus{
       color: #fff;
+      text-shadow: none;
     }
 
     &:hover::before, &:focus::before, &:hover::after, &:focus::after {
