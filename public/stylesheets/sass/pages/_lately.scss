@@ -8,7 +8,7 @@
     text-decoration: none;
     padding-right: 3px;
     color: black;
-    text-shadow: 0 0 5px white;
+    text-shadow: 0 0 10px silver;
     -webkit-transition: color 0.3s;
        -moz-transition: color 0.3s;
             transition: color 0.3s;
@@ -21,26 +21,26 @@
       background: #fff;
       content: '';
       opacity: 0;
-      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-         -moz-transition: opacity 0.3s, -moz-transform 0.3s;
-              transition: opacity 0.3s, transform 0.3s;
-       -webkit-transform: translateY(-10px);
-          -moz-transform: translateY(-10px);
-               transform: translateY(-10px);
+      -webkit-transition: opacity 0.3s, -webkit-transform 0.5s;
+         -moz-transition: opacity 0.3s, -moz-transform 0.5s;
+              transition: opacity 0.3s, transform 0.5s;
+       -webkit-transform: translateX(-20px);
+          -moz-transform: translateX(-20px);
+               transform: translateX(-20px);
     }
 
     &::before {
       top: 0;
-      -webkit-transform: translateY(-10px);
-         -moz-transform: translateY(-10px);
-              transform: translateY(-10px);
+      -webkit-transform: translateX(-20px);
+         -moz-transform: translateX(-20px);
+              transform: translateX(-20px);
     }
 
     &::after{
       bottom: 0;
-      -webkit-transform: translateY(10px);
-         -moz-transform: translateY(10px);
-              transform: translateY(10px);
+      -webkit-transform: translateX(20px);
+         -moz-transform: translateX(20px);
+              transform: translateX(20px);
     }
 
     &:hover, &:focus{
@@ -49,9 +49,9 @@
 
     &:hover::before, &:focus::before, &:hover::after, &:focus::after {
       opacity: 1;
-      -webkit-transform: translateY(0px);
-         -moz-transform: translateY(0px);
-              transform: translateY(0px);
+      -webkit-transform: translateX(0px);
+         -moz-transform: translateX(0px);
+              transform: translateX(0px);
     }
   }
 }
