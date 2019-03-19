@@ -21,6 +21,16 @@
     top: 0;
     left: 0;
   }
+
+  .mural{
+    position: absolute;
+    left: 60px;
+    top: 0px;
+
+    @media screen and (max-width:450px){
+      left: 0px;
+    }
+  }
 }
 
 #riho, #bobert, #sarah, #bee, #bronze, #flower, #georgelaughing, #guru, #josephnyc, #karina, #peekingred, #pistachio, #raspberrysnowman, #justchillin, #zenbonsakura, #snowsalt, #snowmiri, #shadowlight, #tsdlau{
@@ -39,209 +49,203 @@
 
 
 #adirondack{
-  left: 60px;
   top: 0px;
   opacity: 1;
 }
 #theroadgoeseveron{
-  left:  330px;
+  left:  270px;
   top: 0px;
   opacity: 1;
 }
 #briana{
-  left:  600px;
+  left:  540px;
   top: 0px;
   opacity: 1;
 }
 #reminiscent{
-  left:  870px;
+  left:  810px;
   top: 0px;
   opacity: 1;
 }
 #bos{
-  left:  1140px;
+  left:  1080px;
   top: 0px;
   opacity:1;
 }
 #jzsmoke{
-  left:  1410px;
+  left:  1350px;
   top: 0px;
   opacity:1;
 }
-
 #sophie{
-  left:  1680px;
+  left:  1620px;
   top: 0px;
   opacity:1;
 }
 #butterfly{
-  left:  1950px;
+  left:  1890px;
   top: 0px;
   opacity:1;
 }
 #league{
-  left:  2220px;
+  left:  2160px;
   top: 0px;
   opacity:1;
 }
 #fouryears{
-  left:  2490px;
+  left:  2430px;
   top: 0px;
   opacity:1;
 }
 
 
 #pianokeys{
-  left:  60px;
   top: 360px;
   opacity:1;
 }
 #edemame{
-  left:  330px;
+  left:  270px;
   top: 360px;
   opacity:1;
 }
 #summerdreamin{
-  left:  600px;
+  left:  540px;
   top: 360px;
   opacity:1;
 }
 #nemo{
-  left:  870px;
+  left:  810px;
   top: 360px;
   opacity:1;
 }
 #painter{
-  left:  1140px;
+  left:  1080px;
   top: 360px;
   opacity:1;
 }
 #wesley{
-  left:  1410px;
+  left:  1350px;
   top: 360px;
   opacity:1;
 }
 #pumpkins{
-  left:  1680px;
+  left:  1620px;
   top: 360px;
   opacity:1;
 }
 #shoesoptional{
-  left:  1950px;
+  left:  1890px;
   top: 360px;
   opacity:1;
 }
 #parrot{
-  left:  2220px;
+  left:  2160px;
   top: 360px;
   opacity:1;
 }
 #jz2{
-  left:  2490px;
+  left:  2430px;
   top: 360px;
   opacity:1;
 }
 
 
 #bigbeach{
-  left:  60px;
   top: 720px;
   opacity:1;
 }
 #ked{
-  left:  330px;
+  left: 270px;
   top: 720px;
   opacity:1;
 }
 #statesswim{
-  left:  600px;
+  left: 540px;
   top: 720px;
   opacity:1;
 }
 #hocr{
-  left:  870px;
+  left: 810px;
   top: 720px;
   opacity:1;
 }
 #demboiz{
-  left:  1140px;
+  left: 1080px;
   top: 720px;
   opacity:1;
 }
 #packing{
-  left:  1410px;
+  left: 1350px;
   top: 720px;
   opacity:1;
 }
 #sujit{
-  left:  1680px;
+  left: 1620px;
   top: 720px;
   opacity:1;
 }
 #fountain{
-  left:  1950px;
+  left: 1890px;
   top: 720px;
   opacity:1;
 }
 #roadtothetop{
-  left:  2220px;
+  left: 2160px;
   top: 720px;
   opacity:1;
 }
 #ferrari{
-  left:  2490px;
+  left: 2430px;
   top: 720px;
   opacity:1;
 }
 
-
 #rain{
-  left:  60px;
   top: 1080px;
   opacity:1;
 }
 #grandmaster{
-  left:  330px;
+  left: 270px;
   top: 1080px;
   opacity:1;
 }
 #mya{
-  left:  600px;
+  left: 540px;
   top: 1080px;
   opacity:1;
 }
 #speared{
-  left:  870px;
+  left: 810px;
   top: 1080px;
   opacity:1;
 }
 #thomas{
-  left:  1140px;
+  left: 1080px;
   top: 1080px;
   opacity:1;
 }
 #commave{
-  left:  1410px;
+  left: 1350px;
   top: 1080px;
   opacity:1;
 }
 #bu{
-  left:  1680px;
+  left: 1620px;
   top: 1080px;
   opacity:1;
 }
 #castaway{
-  left:  1950px;
+  left: 1890px;
   top: 1080px;
   opacity:1;
 }
 #lookup{
-  left:  2220px;
+  left: 2160px;
   top: 1080px;
   opacity:1;
 }
 #fanboy{
-  left:  2490px;
+  left:  2430px;
   top: 1080px;
   opacity:1;
 }

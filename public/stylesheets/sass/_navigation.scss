@@ -1,5 +1,3 @@
-@import 'mixins';
-
 .sticky-title{
   position: absolute;
   top: 50%;
@@ -8,17 +6,22 @@
   overflow: hidden;
   text-align: center;
   width: 200px;
-  margin-top: -180px; }
-  .sticky-title .title{
+  margin-top: -180px;
+  
+  .title{
     display: block;
     height: 60px;
-    line-height: 60px; }
-  .sticky-title.sticky-title-left{
+    line-height: 60px;
+  }
+  
+  &.sticky-title-left{
     -webkit-transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     -moz-transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     -ms-transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     -o-transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); }
+    transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  }
+}
 
 .navLink{
   color: white;
