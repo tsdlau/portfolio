@@ -1,0 +1,21 @@
+@import "../../plugins/materialize/sass/materialize";
+@import 'globalStyles';
+@import 'navigation';
+@import 'mixins';
+@import 'pages/pages';
+@import 'blinkingCursor';
+@import 'scrollToTop';
+@import 'logos';
+@import 'photos';
+
+.overlay{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+// * {
+//   background: #000 !important;
+//   color: #0f0 !important;
+//   outline: solid #f00 1px !important;
+// }
