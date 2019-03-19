@@ -1,4 +1,4 @@
-.cd-top {
+.cd-top{
   border-radius: 12px;
 
 	position: fixed;
@@ -21,22 +21,22 @@
 	-moz-transition: opacity .3s 0s, visibility 0s .3s;
 	transition: opacity .3s 0s, visibility 0s .3s;
 
-	&.cd-is-visible, &.cd-fade-out, .no-touch &:hover {
+	&.cd-is-visible, &.cd-fade-out, .no-touch &:hover{
 		-webkit-transition: opacity 1s 0s, visibility 0s 0s;
 		-moz-transition: opacity 1s 0s, visibility 0s 0s;
 		transition: opacity 1s 0s, visibility 0s 0s;
 	}
 
-	&.cd-is-visible {
+	&.cd-is-visible{
 		visibility: visible;
 		opacity: 1;
 	}
 
-	&.cd-fade-out {
+	&.cd-fade-out{
 		opacity: .4;
 	}
 
-	.no-touch &:hover {
+	.no-touch &:hover{
 		background-color: rgba(#C0C0C0, 0);
 		opacity: 1;
 	}

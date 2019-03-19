@@ -1,7 +1,7 @@
-#lately {
+#lately{
   background-color: #000000;
 
-  a {
+  a{
     position: relative;
     display: inline-block;
     outline: none;
@@ -13,7 +13,7 @@
        -moz-transition: color text-shadow 0.5s;
             transition: color text-shadow 0.5s;
 
-    &::before, &::after {
+    &::before, &::after{
       position: absolute;
       left: 0;
       width: 100%;
@@ -29,7 +29,7 @@
                transform: translateX(-20px);
     }
 
-    &::before {
+    &::before{
       top: 0;
       -webkit-transform: translateX(-20px);
          -moz-transform: translateX(-20px);
@@ -48,7 +48,7 @@
       text-shadow: none;
     }
 
-    &:hover::before, &:focus::before, &:hover::after, &:focus::after {
+    &:hover::before, &:focus::before, &:hover::after, &:focus::after{
       opacity: 1;
       -webkit-transform: translateX(0px);
          -moz-transform: translateX(0px);

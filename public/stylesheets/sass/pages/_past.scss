@@ -1,8 +1,7 @@
-#past {
+#past{
   background-color: #62ADF2;
-  text-align: right;
 
-  a {
+  a{
     &::after{
       content: "";
       position: absolute;

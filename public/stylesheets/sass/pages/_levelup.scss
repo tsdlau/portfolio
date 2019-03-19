@@ -1,9 +1,9 @@
-#levelup {
+#levelup{
   background-color: #FDA02D;
   text-align: right;
 
-  a {
-    &::after {
+  a{
+    &::after{
       content: '';
       display: block;
       position: absolute;

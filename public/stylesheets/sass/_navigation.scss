@@ -1,6 +1,6 @@
 @import 'mixins';
 
-.sticky-title {
+.sticky-title{
   position: absolute;
   top: 50%;
   left: 0;
@@ -9,11 +9,11 @@
   text-align: center;
   width: 200px;
   margin-top: -180px; }
-  .sticky-title .title {
+  .sticky-title .title{
     display: block;
     height: 60px;
     line-height: 60px; }
-  .sticky-title.sticky-title-left {
+  .sticky-title.sticky-title-left{
     -webkit-transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     -moz-transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     -ms-transform: scale(1) rotate(270deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
@@ -24,7 +24,7 @@
   color: white;
   text-decoration: none;
 }
-#sideNav {
+#sideNav{
   top: 0;
   left: 0;
   background-color: #161616;
@@ -50,10 +50,10 @@
   width: 180px;
 }
 
-a.title {
+a.title{
   position: relative;
 
-  &::before {
+  &::before{
     position: absolute;
     width: 100%;
     height: 0;
@@ -72,7 +72,7 @@ a.title {
     background-color: #fff;
   }
 
-  &:hover::before, &:focus::before {
+  &:hover::before, &:focus::before{
     visibility: visible;
     color: #fff;
     text-shadow: 10px 0 #fff, -10px 0 #fff;

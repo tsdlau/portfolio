@@ -2,17 +2,29 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway:200,300,400';
 @import 'mixins';
 
-body, html {
+body, html{
   font-family: "Quattrocento Sans", sans-serif;
   height: 100%;
 }
 
-.main-container {
+.main-container{
   height: 100%;
   font-size: calc(1.3em + 2vw);
 
   @media screen and (min-width: 1200px){
     font-size: calc(45px + 0.08vw);
+  }
+}
+
+.left-align-text{
+  text-align: left;
+}
+
+.right-align-text{
+  text-align: right;
+
+  @media screen and (max-width: 500px){
+    text-align: left;
   }
 }
 
@@ -24,15 +36,11 @@ body, html {
   min-height: 100%;
   overflow: hidden;
 
-  &:after, &::before {
+  &:after, &::before{
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 
-  }
-
-  @media screen and (max-width:599px), screen and (max-height: 420px){
-    text-align: left;
   }
 }
 
@@ -57,3 +65,4 @@ body, html {
     }
   }
 }
+
