@@ -4,7 +4,17 @@
 
 body, html{
   font-family: "Quattrocento Sans", sans-serif;
+  box-sizing: border-box;
   height: 100%;
+  margin: 0;
+}
+
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+a{
+  text-decoration: none;
 }
 
 .main-container{
