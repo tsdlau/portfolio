@@ -1,7 +1,7 @@
-#merger {
+#merger{
   background-color: #F33746;
 
-  a {
+  a{
     position: relative;
     display: inline-block;
     color: #F33746;
@@ -9,7 +9,7 @@
     text-decoration: none;
     padding: 0;
 
-    &::before {
+    &::before{
       color: white;
       content: attr(data-hover);
       position: absolute;
@@ -18,14 +18,14 @@
               transition: transform 0.5s, opacity 0.3s;
     }
 
-    &:hover::before, &:focus::before {
+    &:hover::before, &:focus::before{
       -webkit-transform: scale(0.9);
          -moz-transform: scale(0.9);
               transform: scale(0.9);
                 opacity: 0;
     }
 
-    &:hover {
+    &:hover{
       text-shadow: 0 0 7px black;
     }
   }

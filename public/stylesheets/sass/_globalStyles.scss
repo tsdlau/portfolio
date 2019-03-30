@@ -1,0 +1,78 @@
+@import 'https://fonts.googleapis.com/css?family=Quattrocento+Sans';
+@import 'https://fonts.googleapis.com/css?family=Raleway:200,300,400';
+@import 'mixins';
+
+body, html{
+  font-family: "Quattrocento Sans", sans-serif;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+}
+
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+a{
+  text-decoration: none;
+}
+
+.main-container{
+  height: 100%;
+  font-size: calc(1.3em + 2vw);
+
+  @media screen and (min-width: 1200px){
+    font-size: calc(45px + 0.08vw);
+  }
+}
+
+.left-align-text{
+  text-align: left;
+}
+
+.right-align-text{
+  text-align: right;
+
+  @media screen and (max-width: 500px){
+    text-align: left;
+  }
+}
+
+.page{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  overflow: hidden;
+
+  &:after, &::before{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+  }
+}
+
+.text-black{
+  @include textsizing;
+
+  p{
+    color: black;
+    a{
+      color: white;
+    }
+  }
+}
+
+.text-white{
+  @include textsizing;
+
+  p{
+    color: white;
+    a{
+      color: black;
+    }
+  }
+}
+
