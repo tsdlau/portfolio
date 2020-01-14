@@ -1,8 +1,37 @@
-= haml :"home/about"
-= haml :"home/lately"
-= haml :"home/merger"
-= haml :"home/levelup"
-= haml :"home/past"
-= haml :"home/launch"
-= haml :"home/photography"
-= haml :"home/contact"
+!!! 5
+%html
+  %head
+    %title dickson lau
+
+    %meta{name: "Name", property: "name", content: "dickson lau"}
+    %meta{name: "Description", property: "description", content: "software engineer. daydreamer. a real human being. woke as fuck."}
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
+    %meta{'http-equiv'=> 'Content-Type', content: 'text/html; charset=utf-8'}
+
+    %link{rel: "stylesheet", type: 'text/css', href: "/stylesheets/home.css"}
+    %link{rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css"}
+  %body
+    #sideNav
+      .sticky-title.sticky-title-left{ data: { "0": "left: 140px;", "100p": "left: 80px;", "200p": "left: 20px;", "300p": "left: -40px;", "400p": "left: -100px;", "500p": "left: -160px;", "600p": "left: -220px;", "700p": "left: -280px;"}}
+        %a.title.navLink{href: "#about"}about
+        %a.title.navLink{href: "#lately"}lately
+        %a.title.navLink{href: "#merger"}before
+        %a.title.navLink{href: "#levelup"}before pt.1
+        %a.title.navLink{href: "#past"}past
+        %a.title.navLink{href: "#launch"}origins
+        %a.title.navLink{href: "#photography"}photography
+        %a.title.navLink{href: "#contact"}contact
+    #theJourney
+
+    .main-container
+      = yield
+
+    %a.cd-top.waves-effect.waves-red{href: "#0"}
+    %script{src: "./index.tsx"}
+    %script{src: "javascript/lazysizes.min.js", async: true}
+    %script{src: "javascript/ga.min.js"}
+    %script{src: "javascript/jquery-3.3.1.min.js"}
+    %script{src: "javascript/typed.min.js"}
+    %script{src: "javascript/homesite.js"}
+    %script{src: "javascript/skrollr.min.js"}
+    %script{src: "javascript/modernizr.min.js"}

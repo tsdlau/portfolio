@@ -4,7 +4,7 @@ class Portfolio < Sinatra::Application
   end
 
   get '/home' do
-    haml :'home/home', layout: :'home/layout'
+    haml :'home/home'
   end
 
   # get '/photos' do

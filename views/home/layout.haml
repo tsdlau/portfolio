@@ -21,11 +21,13 @@
         %a.title.navLink{href: "#launch"}origins
         %a.title.navLink{href: "#photography"}photography
         %a.title.navLink{href: "#contact"}contact
+    #theJourney
+
     .main-container
       = yield
 
     %a.cd-top.waves-effect.waves-red{href: "#0"}
-
+    %script{src: "index.tsx"}
     %script{src: "javascript/lazysizes.min.js", async: true}
     %script{src: "javascript/ga.min.js"}
     %script{src: "javascript/jquery-3.3.1.min.js"}
