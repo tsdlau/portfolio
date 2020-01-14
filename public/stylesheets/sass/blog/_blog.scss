@@ -44,12 +44,13 @@
       transform-origin: bottom center;
       background: black;
       z-index: -1;
-      transition: 0.5s ease-out;
+      transition: 0.2s ease-out;
+      border-radius: 4px;
     }
 
     &:hover{
       color: white;
-      transition: .5s ease-in;
+      transition: .3s ease-in;
 
       &::after{
         transform: scaleX(1);
