@@ -1,11 +1,15 @@
 #lately{
   background-color: #000000;
 
-  a{
+  a {
     position: relative;
     display: inline-block;
     outline: none;
+    z-index: 1;
     text-decoration: none;
+  }
+
+  .rgg-link{
     padding-right: 3px;
     color: rgba(100, 100, 100, 0.8);
     text-shadow: 0 0 3px silver;
@@ -53,6 +57,110 @@
       -webkit-transform: translateX(0px);
          -moz-transform: translateX(0px);
               transform: translateX(0px);
+    }
+  }
+
+  .ruelala-link {
+    color: rgba(255, 48, 101, 1);
+    text-shadow: none;
+    opacity: .4;
+    transition: opacity 1s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .gilt-link {
+    color: rgba(255, 180, 0, 1);
+    text-shadow: none;
+    opacity: .4;
+    transition: opacity 1s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .particles-circle-rue {
+    position: absolute;
+    background-color: rgba(214, 64, 102, .7);
+    width: 30px;
+    height: 30px;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+
+    &:nth-of-type(odd) {
+      border: solid 2px #FF0083;
+      background-color: transparent;
+    }
+
+    @for $i from 1 through 50 {
+      @keyframes rue-particles-#{$i} {
+        0% {
+          transform: scale(1);
+          opacity: .4;
+        }
+
+        50% {
+          opacity: 1;
+        }
+        100% {
+          left: random(500) - 250 + 0px;
+          top: random(500) - 250 + 0px;
+          transform: scale(0);
+          opacity: 0;
+        }
+      }
+
+      .rue-bubbly &:nth-of-type(#{$i}) {
+        animation: rue-particles-#{$i} 2s ($i / 40) + 0s;
+        left: percentage(random(100) / 100);
+      }
+    }
+  }
+
+  .particles-circle-gilt {
+    position: absolute;
+    background-color: rgba(242, 193, 75, .7);
+    width: 30px;
+    height: 30px;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+
+    &:nth-of-type(even) {
+      border: solid 2px rgba(242, 193, 75, .7);
+      background-color: transparent;
+    }
+
+    @for $i from 1 through 50 {
+      @keyframes gilt-particles-#{$i} {
+        0% {
+          transform: scale(1);
+          opacity: .2;
+        }
+
+        50% {
+          opacity: 1;
+        }
+        100% {
+          right: random(500) - 250 + 0px;
+          top: random(500) - 250 + 0px;
+          transform: scale(0);
+          opacity: 0;
+        }
+      }
+
+      .gilt-bubbly &:nth-of-type(#{$i}) {
+        right: percentage(random(100) / 100);
+        animation: gilt-particles-#{$i} 2s ($i / 40) + 0s;
+      }
     }
   }
 }

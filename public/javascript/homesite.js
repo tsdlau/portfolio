@@ -88,4 +88,18 @@ $(document).ready(function() {
   }
   automagick();
 
+  //rue and gilt bubbles (who doesn't love bubbly)
+  $('.ruelala-link').mouseenter(function(){
+    $('.main-container').stop().addClass('rue-bubbly');
+    setTimeout(function(){
+      $('.main-container').removeClass('rue-bubbly');
+    }, 3000)
+  });
+
+  $('.gilt-link').mouseenter(function(){
+    $('.main-container').stop().addClass('gilt-bubbly');
+    setTimeout(function(){
+      $('.main-container').removeClass('gilt-bubbly');
+    }, 3000)
+  });
 });
